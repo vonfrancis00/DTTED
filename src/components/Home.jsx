@@ -31,21 +31,21 @@ const Home = () => {
               Join us for the annual seminar on "Future of Education".
             </p>
           </div>
-        </div>
 
-        <div className="absolute bottom-40 left-1/2 transform -translate-x-1/2 flex space-x-4">
-          <Link
-            to="/activities"
-            className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 text-nowrap"
-          >
-            Monthly Activities
-          </Link>
-          <Link
-            to="/announcements"
-            className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 text-nowrap"
-          >
-            Announcements
-          </Link>
+          <div className="flex justify-center w-full gap-2 mt-5">
+            <Link
+              to="/activities"
+              className="bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 text-nowrap"
+            >
+              Monthly Activities
+            </Link>
+            <Link
+              to="/announcements"
+              className="bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 text-nowrap"
+            >
+              Announcements
+            </Link>
+          </div>
         </div>
       </div>
     </section>
