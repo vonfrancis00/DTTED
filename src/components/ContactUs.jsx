@@ -2,8 +2,8 @@ import React from "react";
 
 const ContactUs = () => {
     return (
-        <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="max-w-6xl mx-auto my-0 md:my-32">
+        <div className="grid md:grid-cols-2 gap-12 p-4">
           {/* Contact Information */}
           <div className="space-y-6">
             <div>
