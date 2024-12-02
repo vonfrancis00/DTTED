@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 
 const Alumni = () => {
   const [alumni, setAlumni] = useState([
-    { name: "John Doe", profession: "Software Engineer", achievements: "Built a leading tech company." },
-    { name: "Jane Smith", profession: "Data Scientist", achievements: "Published research on AI." },
+    { name: "Von Francis", profession: "Junior Developer", achievements: "Built a leading tech company." }
   ]);
 
   const [newAlumni, setNewAlumni] = useState({
@@ -33,12 +32,12 @@ const Alumni = () => {
       {/* Alumni Directory */}
       <div className="mb-6">
         <h3 className="text-2xl font-semibold text-center mb-4">Alumni Directory</h3>
-        <ul className="space-y-4">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {alumni.map((a, index) => (
-            <li key={index} className="bg-white p-4 shadow-md rounded-lg">
-              <p className="font-semibold text-lg">{a.name}</p>
-              <p className="text-gray-600">{a.profession}</p>
-              <p className="text-gray-600">{a.achievements}</p>
+            <li key={index} className="bg-yellow-400 p-4 shadow-md rounded-lg">
+              <p className="font-semibold text-lg text-blue-800">{a.name}</p>
+              <p className="text-gray-600 text-black">{a.profession}</p>
+              <p className="text-gray-600 text-black">{a.achievements}</p>
             </li>
           ))}
         </ul>

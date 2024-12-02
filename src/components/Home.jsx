@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { MdCalendarMonth } from "react-icons/md";
+import { GrAnnounce } from "react-icons/gr";
 
 const Home = () => {
   return (
@@ -32,17 +34,19 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="flex justify-center w-full gap-2 mt-5">
+          <div className="flex justify-center w-full gap-4 mt-5">
             <Link
               to="/activities"
-              className="bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 text-nowrap"
+              className="bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 flex items-center gap-2"
             >
+              <MdCalendarMonth size={20} />
               Monthly Activities
             </Link>
             <Link
               to="/announcements"
-              className="bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 text-nowrap"
+              className="bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 flex items-center gap-2"
             >
+              <GrAnnounce size={20} />
               Announcements
             </Link>
           </div>

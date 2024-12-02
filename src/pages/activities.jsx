@@ -32,11 +32,11 @@ const Activities = () => {
 
       <div className="mb-6">
         <h3 className="text-2xl font-semibold text-center mb-4">Upcoming Activities</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {activities.map((activity, index) => (
-            <div key={index} className="bg-white p-4 shadow-md rounded-lg">
-              <h4 className="font-semibold text-xl">{activity.title}</h4>
-              <p className="text-gray-600">{activity.description}</p>
+            <div key={index} className="bg-white p-4 shadow-md rounded-lg bg-yellow-400">
+              <h4 className="font-semibold text-xl text-blue-800">{activity.title}</h4>
+              <p className="text-gray-600 text-black">{activity.description}</p>
               <p className="text-gray-500 mt-2">{new Date(activity.date).toLocaleDateString()}</p>
             </div>
           ))}

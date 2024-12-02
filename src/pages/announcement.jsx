@@ -30,11 +30,11 @@ const Announcements = () => {
       <h2 className="text-3xl font-bold text-center mb-6">Announcements</h2>
       <div className="mb-6">
         <h3 className="text-2xl font-semibold text-center mb-4">Latest Announcements</h3>
-        <ul className="space-y-4">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {announcements.map((announcement, index) => (
-            <li key={index} className="bg-white p-4 shadow-md rounded-lg">
-              <h4 className="font-semibold text-xl">{announcement.title}</h4>
-              <p className="text-gray-600">{announcement.description}</p>
+            <li key={index} className="bg-yellow-400 p-4 shadow-md rounded-lg">
+              <h4 className="font-semibold text-xl text-blue-900">{announcement.title}</h4>
+              <p className="text-gray-600 text-black">{announcement.description}</p>
             </li>
           ))}
         </ul>

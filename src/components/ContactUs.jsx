@@ -7,17 +7,11 @@ const ContactUs = () => {
           {/* Contact Information */}
           <div className="space-y-6">
             <div>
-              <h2 className="text-2xl font-semibold text-gray-900">Our Address</h2>
-              <p className="text-gray-700">123 Department St., Suite 101</p>
-              <p className="text-gray-700">City, State, ZIP Code</p>
-              <p className="text-gray-700">Phone: (123) 456-7890</p>
-              <p className="text-gray-700">Email: contact@department.com</p>
-            </div>
-            <div>
-              <h2 className="text-2xl font-semibold text-gray-900">Business Hours</h2>
-              <p className="text-gray-700">Monday - Friday: 9:00 AM - 6:00 PM</p>
-              <p className="text-gray-700">Saturday: 10:00 AM - 4:00 PM</p>
-              <p className="text-gray-700">Sunday: Closed</p>
+              <h2 className="text-2xl font-semibold text-gray-900">Contact Us</h2>
+              <p className="text-gray-700">Mabaylan Compound, Carinugan, Balulang</p>
+              <p className="text-gray-700">Cagayan De Oro City, 9000</p>
+              <p className="text-gray-700">Phone: 09123456789</p>
+              <p className="text-gray-700">Email: vonacenas17@gmail.com</p>
             </div>
           </div>
 
