@@ -22,10 +22,7 @@ const Footer = () => {
               <h2 className="text-white text-sm mb-2 font-semibold hover:underline">Activities</h2>
             </a>
             <a href="/alumni">
-              <h2 className="text-white text-sm mb-2 font-semibold hover:underline">Alumni</h2>
-            </a>
-            <a href="/contactus">
-              <h2 className="text-white text-sm mb-2 font-semibold hover:underline">Contact Us</h2>
+              <h3 className="text-white text-sm mb-2 font-semibold hover:underline">Alumni</h3>
             </a>
           </div>
         </div>
@@ -57,9 +54,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      <div className="text-center text-sm mt-2">
-        <p className="text-yellow-500 text-sm">© 2024 Department of Technical and Technology Education. All Rights Reserved.</p>
+      <div className="border-t border-gray mt-4"></div>
+      <div className="text-center text-sm mt-3">
+      <p className="text-yellow-500 text-sm mt-5">© 2024 Department of Technical and Technology Education. All Rights Reserved.</p>
+        <a href="/contactus">
+          <h4 className="text-gray-400 text-sm mr-10 hover:underline">Contact Us</h4>
+        </a>
       </div>
     </footer>
   );
