@@ -16,16 +16,16 @@ const Footer = () => {
           />
           <div className="ml-10">
             <a href="/aboutus">
-              <h1 className="text-white text-sm mb-3 hover:underline">About Us</h1>
+              <h1 className="text-white text-sm mb-2 font-semibold hover:underline">About Us</h1>
             </a>
             <a href="/activities">
-              <h2 className="text-white text-sm mb-3 hover:underline">Activities</h2>
+              <h2 className="text-white text-sm mb-2 font-semibold hover:underline">Activities</h2>
             </a>
             <a href="/alumni">
-              <h2 className="text-white text-sm mb-3 hover:underline">Alumni</h2>
+              <h2 className="text-white text-sm mb-2 font-semibold hover:underline">Alumni</h2>
             </a>
             <a href="/contactus">
-              <h2 className="text-white text-sm mb-3 hover:underline">Contact Us</h2>
+              <h2 className="text-white text-sm mb-2 font-semibold hover:underline">Contact Us</h2>
             </a>
           </div>
         </div>
@@ -58,8 +58,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center text-sm mt-3">
-        <p className="text-yellow-500">© 2024 Department of Technical and Technology Education. All Rights Reserved.</p>
+      <div className="text-center text-sm mt-2">
+        <p className="text-yellow-500 text-sm">© 2024 Department of Technical and Technology Education. All Rights Reserved.</p>
       </div>
     </footer>
   );

@@ -20,7 +20,7 @@ const Home = () => {
             className="h-36 w-36 mb-4"
           />
 
-          <h2 className="text-4xl font-bold text-white mb-4">D.T.T.E.D</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">CSTE</h2>
           <p className="text-xl text-white mb-6">
             Department of Technical and Technology Education
           </p>

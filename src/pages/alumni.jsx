@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Alumni = () => {
   const [alumni, setAlumni] = useState([
-    { name: "Von Francis", profession: "Junior Developer", achievements: "Built a leading tech company." }
+    { name: "Guen Idjao", profession: "Educator", achievements: "Organizing events and program for the youth." }
   ]);
 
   const [newAlumni, setNewAlumni] = useState({
