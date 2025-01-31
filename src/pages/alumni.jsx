@@ -51,7 +51,7 @@ const Alumni = () => {
         </div>
 
         {/* Alumni Registration Form */}
-        <div>
+        <div className='mb-20'>
           <h3 className="text-2xl font-semibold text-center mb-4">Alumni Registration</h3>
           <form onSubmit={handleSubmit} className="space-y-4 max-w-xl mx-auto">
             <input
