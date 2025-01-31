@@ -51,15 +51,15 @@ const Footer = () => {
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
               <FaYoutube className="text-white hover:text-red-500 transition-colors" size={20} />
             </a>
+            <a href="/contactus">
+          <h4 className="text-gray-400 text-sm mr-10 hover:underline">Contact Us</h4>
+        </a>
           </div>
         </div>
       </div>
       <div className="border-t border-gray mt-4"></div>
       <div className="text-center text-sm mt-3">
       <p className="text-yellow-500 text-sm mt-5">© 2024 Department of Technical and Technology Education. All Rights Reserved.</p>
-        <a href="/contactus">
-          <h4 className="text-gray-400 text-sm mr-10 hover:underline">Contact Us</h4>
-        </a>
       </div>
     </footer>
   );

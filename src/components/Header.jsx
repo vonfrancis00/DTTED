@@ -11,7 +11,7 @@ import {
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [headerOpacity, setHeaderOpacity] = useState(1); // State for header opacity
+  const [headerOpacity, setHeaderOpacity] = useState(1);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -19,7 +19,7 @@ const Header = () => {
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
-    const newOpacity = Math.max(0.7, 1 - scrollY / 200); // Adjust the divisor for sensitivity
+    const newOpacity = Math.max(0.7, 1 - scrollY / 200);
     setHeaderOpacity(newOpacity);
   };
 
@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <header
       className="bg-yellow-400 text-blue-800 px-8 py-2 flex flex-row items-center fixed top-0 left-0 w-full z-50"
-      style={{ opacity: headerOpacity }} // Set the opacity style
+      style={{ opacity: headerOpacity }}
     >
       <div className="container mx-auto flex justify-between items-center">
         <div className="bg-white rounded-md min-h-[60px] min-w-[60px] max-h-[60px] max-w-[60px] p-1">
