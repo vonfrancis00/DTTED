@@ -17,15 +17,13 @@ const Home = () => {
           <img
             src="/logo-dept.png"
             alt="Department Logo"
-            className="h-36 w-36 mb-4 mt-8"
+            className="h-48 w-48 md:h-56 md:w-56 mb-4 mt-8"
           />
 
-          <h2 className="text-4xl font-bold text-white mb-4">CSTE</h2>
-          <p className="text-xl text-white mb-6">
-            Department of Technical and Technology Education
-          </p>
+          <h2 className="text-4xl font-bold text-white mb-4">
+            Department of Technical and Technology Education</h2>
 
-          <div className="bg-transparent p-6 shadow-md rounded-lg max-w-3xl mx-auto mt-8">
+          <div className="bg-transparent p-6 shadow-md rounded-lg max-w-3xl mx-auto mt-20">
             <h3 className="text-2xl font-semibold mb-2 text-white">
               Department Event Coming Up!
             </h3>
