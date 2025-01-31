@@ -13,11 +13,11 @@ const Home = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="h-full flex flex-col justify-start items-start text-left bg-black bg-opacity-50 p-8">
+        <div className="h-full flex flex-col justify-start items-start text-left bg-black bg-opacity-50 p-8 mt-12">
           <img
             src="/logo-dept.png"
             alt="Department Logo"
-            className="h-36 w-36 mb-4"
+            className="h-36 w-36 mb-4 mt-8"
           />
 
           <h2 className="text-4xl font-bold text-white mb-4">CSTE</h2>

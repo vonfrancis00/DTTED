@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
   FaBars,
@@ -11,13 +11,30 @@ import {
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [headerOpacity, setHeaderOpacity] = useState(1); // State for header opacity
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    const newOpacity = Math.max(0.7, 1 - scrollY / 200); // Adjust the divisor for sensitivity
+    setHeaderOpacity(newOpacity);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="bg-yellow-400 text-blue-800 px-8 py-2 flex flex-row items-center relative">
+    <header
+      className="bg-yellow-400 text-blue-800 px-8 py-2 flex flex-row items-center fixed top-0 left-0 w-full z-50"
+      style={{ opacity: headerOpacity }} // Set the opacity style
+    >
       <div className="container mx-auto flex justify-between items-center">
         <div className="bg-white rounded-md min-h-[60px] min-w-[60px] max-h-[60px] max-w-[60px] p-1">
           <Link to="/">
@@ -29,13 +46,11 @@ const Header = () => {
         </button>
       </div>
       <nav
-        className={`absolute ${
-          isSidebarOpen ? "top-[66px]" : "top-0"
-        } md:top-0 left-0 w-full bg-yellow-400 transform ${
-          isSidebarOpen ? "translate-y-0" : "-translate-y-full"
-        } transition-transform duration-300 ease-in-out md:relative md:translate-y-0 md:flex md:space-x-6`}
+        className={`${
+          isSidebarOpen ? "block" : "hidden"
+        } md:block md:flex md:space-x-6 md:w-full p-4 md:p-0 transition-transform duration-300 ease-in-out`}
       >
-        <ul className="flex flex-col md:w-full md:justify-end md:gap-6 md:flex-row space-y-4 md:space-y-0 p-4 md:p-0">
+        <ul className="flex flex-col md:w-full md:justify-end md:gap-6 md:flex-row space-y-4 md:space-y-0">
           <li>
             <Link
               to="/aboutus"

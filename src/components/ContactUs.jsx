@@ -8,9 +8,9 @@ const ContactUs = () => {
           <div className="space-y-6">
             <div>
               <h2 className="text-2xl font-semibold text-gray-900">Contact Us</h2>
-              <p className="text-gray-700">Mabaylan Compound, Carinugan, Balulang</p>
-              <p className="text-gray-700">Cagayan De Oro City, 9000</p>
-              <p className="text-gray-700">Phone: 09123456789</p>
+              <p className="text-gray-700">Kinoguitan Misamis Oriental</p>
+              <p className="text-gray-700">Misamis Oriental, 9010</p>
+              <p className="text-gray-700">Phone: 096*******6</p>
               <p className="text-gray-700">Email: vonacenas17@gmail.com</p>
             </div>
           </div>
