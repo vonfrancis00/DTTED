@@ -13,13 +13,14 @@ const UniversityInformation = () => {
               <h2 className="text-4xl font-extrabold text-gray-800 mb-4 mt-5">
                 University of Science and Technology of Southern Philippines
               </h2>
-              <p className="text-lg text-gray-600 leading-relaxed mt-4">
-                The University of Science and Technology of Southern Philippines (USTP) is a premier state university in the Philippines,
-                offering advanced education and research in science, technology, engineering, and mathematics.
+              <p className="text-xl text-gray-600 leading-relaxed mt-4">
+              The USTP Cagayan de Oro is one of the university system’s major campuses strategically located at the center of 
+              the City of Golden Friendship with a total land area of 9 hectares.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed mt-4">
-                USTP is committed to fostering innovation, promoting sustainable development,
-                and preparing students to meet the global challenges of the future.
+              <p className="text-xl text-gray-600 leading-relaxed mt-4">
+              The campus is CHED-recognized as a Center of Excellence in Information Technology and Centers of Development in Electrical Engineering and Mathematics. 
+              It is also acknowledged as a Top 4 Performing SUC with the Highest Number of Level III Accredited Programs in 2020 as adjudged by the AACCUP, Inc. 
+              Its niche programs include Bachelor of Science in Electrical Engineering, Bachelor of Science in Information Technology, and Bachelor of Science in Applied Mathematics.
               </p>
             </div>
           </div>
