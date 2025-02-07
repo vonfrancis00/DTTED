@@ -11,6 +11,7 @@ import ContactUs from './components/ContactUs';
 import UniversityInformation from "./pages/universityinfo";
 import ContactInfo from "./pages/contactinfo";
 import DTTED from "./pages/dtted";
+import Team from "./pages/team";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/aboutus/universityinfo" element={<UniversityInformation />} />
           <Route path="/aboutus/contactinfo" element={<ContactInfo />} />
           <Route path="/aboutus/dtted" element={<DTTED />} />
+          <Route path="/aboutus/team" element={<Team />} />
 
         </Routes>
       </main>
