@@ -12,6 +12,7 @@ import UniversityInformation from "./pages/universityinfo";
 import ContactInfo from "./pages/contactinfo";
 import DTTED from "./pages/dtted";
 import Team from "./pages/team";
+import DTLED from "./pages/btled";
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
           <Route path="/aboutus/contactinfo" element={<ContactInfo />} />
           <Route path="/aboutus/dtted" element={<DTTED />} />
           <Route path="/aboutus/team" element={<Team />} />
+          <Route path="/dtled" element={<DTLED />} />
+
 
         </Routes>
       </main>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Dtted = () => {
   return (
@@ -66,7 +67,9 @@ const Dtted = () => {
           </p>
           <ul className="gap-8">
             <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-10">
-              <h3 className="text-2xl font-bold text-center text-blue-800 mb-2">Bachelor of Technology and Livelihood Education (BTLED)</h3>
+              <Link to="/dtled">
+              <h3 className="text-2xl font-bold text-center hover:underline text-blue-800 mb-2">Bachelor of Technology and Livelihood Education (BTLED)</h3>
+              </Link>
               <p className="text-gray-700 text-lg">
               The Bachelor of Technology and Livelihood Education (BTLED) program is design to equip future teachers who will be teaching the Technology and Livelihood Education 
               subjects for Grades 4 to 8 in the basic education. Specifically, the BTLEd program is expected to produce teachers who can assume the following major roles:<b/>  
