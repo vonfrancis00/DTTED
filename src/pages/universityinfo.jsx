@@ -24,6 +24,62 @@ const UniversityInformation = () => {
               </p>
             </div>
           </div>
+          <div className="bg-white max-w-7xl mx-auto p-8 rounded-lg shadow-xl mt-20">
+            {/* Vision Section */}
+            <section className="mb-12">
+            <h2 className="text-3xl font-extrabold text-center text-blue-800 mb-4">Vision</h2>
+            <p className="text-lg font-bold text-center text-gray-700 mb-4">
+            The University is a nationally recognized Science and Technology University providing the vital link between 
+            education and the economy.
+
+            </p>
+            </section>
+          </div>
+          <div className="bg-white max-w-7xl mx-auto p-8 rounded-lg shadow-xl mt-10">
+            {/* Mission Section */}
+            <section className="mb-12">
+            <h2 className="text-3xl font-extrabold text-center text-blue-800 mb-4">Mission</h2>
+            <p className="text-xl font-bold text-gray-700 mb-4">
+            The mission of the University is to:
+            </p>
+            <ul className="list-disc pl-6 text-lg text-gray-700 space-y-4">
+              <li>Bring the world of work (industry) into the actual higher education and training of students,</li>
+              <li>Offer entrepreneurs the opportunity to maximize their business potential through a gamut of services from product conceptualization to commercialization, and</li>
+              <li>Contribute significantly to the National Development Goals of food security and energy sufficiency through technological solutions.</li>
+            </ul>
+            </section>
+          </div>
+          <div className="bg-white max-w-7xl mx-auto p-8 rounded-lg shadow-xl mt-10">
+            {/* Core Values Section */}
+            <section className="mb-12">
+            <h2 className="text-3xl font-extrabold text-center text-blue-800 mb-4">USTP Core Values</h2>
+            <p className="text-xl font-semibold text-gray-700 mb-4">
+            Setting the right behavior and perspectives is fundamental in the fulfillment of one’s goals. Thus, the university agreed upon the following core values that would 
+            guide its members and stakeholders in all their undertakings and move them on the right path:
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h3 className="text-2xl font-extrabold text-center text-blue-800 mb-2">Unselfish Dedication</h3>
+            <p className="text-gray-700 text-lg mt-5 mb-2">Selfless commitment and complete fidelity towards a course of action or goal.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h3 className="text-2xl font-extrabold text-center text-blue-800 mb-2">Social Responsiveness</h3>
+            <p className="text-gray-700 text-lg mt-5 mb-2">Ethical/moral responsibility leads to corrective action on social issues and contributions to the betterment of the environment and the community’s quality of life.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h3 className="text-2xl font-extrabold text-center text-blue-800 mb-2">Transformational Leadership</h3>
+            <p className="text-gray-700 text-lg mt-5 mb-2">Leading through inspiration and by example fosters positive change with the end goal of developing followers into leaders.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h3 className="text-2xl font-extrabold text-center text-blue-800 mt-5 mb-2">Prudence</h3>
+            <p className="text-gray-700 text-lg mt-5 mb-2">Self-governance leads to circumspection and good judgment in the management of affairs and use of resources.</p>
+            </div>
+            </div>
+            </section>
+          </div>
+
+
+
           <div className="bg-white max-w-full mx-auto p-8 rounded-lg shadow-xl mt-20">
           <section>
           <h2 className="text-3xl font-extrabold text-blue-800 mb-4">USTP Updates</h2>

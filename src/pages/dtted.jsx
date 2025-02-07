@@ -60,45 +60,33 @@ const Dtted = () => {
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-blue-800 mb-4">Course Offerings</h2>
           <p className="text-lg text-gray-700 mb-4">
-            Our DTTED program offers a comprehensive curriculum designed to equip students with the
+            Our program offers a comprehensive curriculum designed to equip students with the
             skills and knowledge needed for success in global management roles. Below are some of
             the key courses:
           </p>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-2xl font-semibold text-blue-800 mb-2">Global Business Strategy</h3>
-              <p className="text-gray-700">
-                Explore the key strategies businesses use to succeed in an increasingly interconnected global market.
+          <ul className="gap-8">
+            <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-10">
+              <h3 className="text-2xl font-bold text-center text-blue-800 mb-2">Bachelor of Technology and Livelihood Education (BTLED)</h3>
+              <p className="text-gray-700 text-lg">
+              The Bachelor of Technology and Livelihood Education (BTLED) program is design to equip future teachers who will be teaching the Technology and Livelihood Education 
+              subjects for Grades 4 to 8 in the basic education. Specifically, the BTLEd program is expected to produce teachers who can assume the following major roles:<b/>  
               </p>
+              <ul className="list-disc pl-6 text-gray-700 text-lg">
+                <li>Effective synthesizers of organized knowledge to allow analytical and critical thinking skills.</li>
+                <li>Efficient and effective promoters and facilitators of learning to enable the learners to develop to the fullest their potential for a continuing pursuit of lifelong learning in technology and livelihood education.</li>
+                <li>Committed humanists whose clear understanding and appreciation of human ideals and values inspire learners to realize their potential.</li>
+                <li> Model teachers with competence to teach the TLE exploratory courses from Grades 4-8.</li>
+                <li> With high regard for learning imbued with proper work attitude and values as practiced in industry.</li>
+                <li> Nationally-certified trainers in their fields of specialization.</li>
+              </ul>
             </li>
-            <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-2xl font-semibold text-blue-800 mb-2">International Marketing</h3>
-              <p className="text-gray-700">
-                Learn how to develop marketing strategies that resonate across cultures and international markets.
-              </p>
-            </li>
-            <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-2xl font-semibold text-blue-800 mb-2">Cross-Cultural Communication</h3>
-              <p className="text-gray-700">
-                Study effective communication techniques for navigating cultural differences in a global business environment.
-              </p>
-            </li>
-            <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-2xl font-semibold text-blue-800 mb-2">Leadership in Global Contexts</h3>
-              <p className="text-gray-700">
-                Develop the leadership skills required to guide diverse teams across international markets.
-              </p>
-            </li>
-            <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-2xl font-semibold text-blue-800 mb-2">Global Financial Management</h3>
-              <p className="text-gray-700">
-                Gain insights into financial decision-making in a globalized economic environment.
-              </p>
-            </li>
-            <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-2xl font-semibold text-blue-800 mb-2">Global Supply Chain Management</h3>
-              <p className="text-gray-700">
-                Learn about managing supply chains that span multiple countries and continents.
+            <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-20">
+              <h3 className="text-2xl font-bold text-blue-800 mb-2">Bachelor in Technical-Vocational Teacher Education (BTVTEd)</h3>
+              <p className="text-gray-700 text-lg">
+              The Bachelor in Technical-Vocational Teacher Education (BTVTEd) is a four-year program designed to prepare future teachers in Technical and Vocational Education and Training (TVET) 
+              for roles in TLE, Senior High School, and TVET institutions. It equips students with the knowledge, skills, attitudes, and values necessary for effective teaching. 
+              BTVTEd graduates meet TESDA’s Trainer’s Methodology requirement and are exempt from the TM assessment after passing the licensure exam. The program also aims to develop teachers 
+              who can contribute to community development with competence and human values.
               </p>
             </li>
           </ul>
