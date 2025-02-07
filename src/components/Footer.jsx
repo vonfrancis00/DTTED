@@ -15,7 +15,7 @@ const Footer = () => {
             className="max-w-[100px] h-auto mb-4" 
           />
           <div className="ml-10">
-            <a href="/aboutus">
+            <a href="/aboutus/team">
               <h1 className="text-white text-sm mb-2 font-semibold hover:underline">About</h1>
             </a>
             <a href="/activities">

@@ -3,7 +3,7 @@ import React from "react";
 const UniversityInformation = () => {
     return (
         <section id="about" className="py-20 bg-gray-50 mb-20">
-          <div className="container mx-auto flex flex-col md:flex-row items-center md:items-start bg-white shadow-lg rounded-2xl p-8">
+          <div className="container mx-auto mt-10 flex flex-col md:flex-row items-center md:items-start bg-white shadow-lg rounded-2xl p-8">
             <img 
               src="/USTP-CDO.jpg" 
               alt="USTP Logo" 
