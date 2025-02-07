@@ -11,20 +11,29 @@ import {
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+  const [isAlumniDropdownOpen, setIsAlumniDropdownOpen] = useState(false);
   const [headerOpacity, setHeaderOpacity] = useState(1);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
-    setIsDropdownOpen(false);
+    setIsAboutDropdownOpen(false);
+    setIsAlumniDropdownOpen(false);
   };
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+  const toggleAboutDropdown = () => {
+    setIsAboutDropdownOpen(!isAboutDropdownOpen);
+    setIsAlumniDropdownOpen(false);
+  };
+
+  const toggleAlumniDropdown = () => {
+    setIsAlumniDropdownOpen(!isAlumniDropdownOpen);
+    setIsAboutDropdownOpen(false);
   };
 
   const handleLinkClick = () => {
-    setIsDropdownOpen(false);
+    setIsAboutDropdownOpen(false);
+    setIsAlumniDropdownOpen(false);
   };
 
   const handleScroll = () => {
@@ -48,7 +57,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="bg-white rounded-md min-h-[60px] min-w-[60px] max-h-[60px] max-w-[60px] p-1">
           <Link to="/" onClick={handleLinkClick}>
-            <img src="/ustp.png" alt="Department Logo" />
+            <img src="/ustp.png" alt="Ustp Logo" />
           </Link>
         </div>
         <button onClick={toggleSidebar} className="md:hidden">
@@ -56,19 +65,17 @@ const Header = () => {
         </button>
       </div>
       <nav
-        className={`$${
-          isSidebarOpen ? "block" : "hidden"
-        } md:block md:flex md:space-x-6 md:w-full p-4 md:p-0 transition-transform duration-300 ease-in-out`}
+        className={`$${isSidebarOpen ? "block" : "hidden"} md:block md:flex md:space-x-6 md:w-full p-4 md:p-0 transition-transform duration-300 ease-in-out`}
       >
         <ul className="flex flex-col md:w-full md:justify-end md:gap-6 md:flex-row space-y-4 md:space-y-0 relative">
           <li className="relative">
             <button
-              onClick={toggleDropdown}
+              onClick={toggleAboutDropdown}
               className="hover:underline font-semibold flex items-center gap-2"
             >
               <FaInfoCircle /> About
             </button>
-            {isDropdownOpen && (
+            {isAboutDropdownOpen && (
               <ul className="absolute left-0 mt-2 w-48 bg-white shadow-xl rounded-lg overflow-hidden z-50 transition-all duration-300 ease-out">
                 <li>
                   <Link
@@ -109,14 +116,35 @@ const Header = () => {
               </ul>
             )}
           </li>
-          <li>
-            <Link
-              to="/alumni"
-              onClick={handleLinkClick}
+          <li className="relative">
+            <button
+              onClick={toggleAlumniDropdown}
               className="hover:underline font-semibold flex items-center gap-2"
             >
               <FaUserGraduate /> Alumni
-            </Link>
+            </button>
+            {isAlumniDropdownOpen && (
+              <ul className="absolute left-0 mt-2 w-48 bg-white shadow-xl rounded-lg overflow-hidden z-50 transition-all duration-300 ease-out">
+                <li>
+                  <Link
+                    to="/alumni/events"
+                    onClick={handleLinkClick}
+                    className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
+                  >
+                    Alumni Events
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/alumni/network"
+                    onClick={handleLinkClick}
+                    className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
+                  >
+                    Alumni Network
+                  </Link>
+                </li>
+              </ul>
+            )}
           </li>
           <li>
             <Link
