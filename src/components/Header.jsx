@@ -11,10 +11,20 @@ import {
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [headerOpacity, setHeaderOpacity] = useState(1);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+    setIsDropdownOpen(false);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleLinkClick = () => {
+    setIsDropdownOpen(false);
   };
 
   const handleScroll = () => {
@@ -37,7 +47,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex justify-between items-center">
         <div className="bg-white rounded-md min-h-[60px] min-w-[60px] max-h-[60px] max-w-[60px] p-1">
-          <Link to="/">
+          <Link to="/" onClick={handleLinkClick}>
             <img src="/ustp.png" alt="Department Logo" />
           </Link>
         </div>
@@ -46,23 +56,64 @@ const Header = () => {
         </button>
       </div>
       <nav
-        className={`${
+        className={`$${
           isSidebarOpen ? "block" : "hidden"
         } md:block md:flex md:space-x-6 md:w-full p-4 md:p-0 transition-transform duration-300 ease-in-out`}
       >
-        <ul className="flex flex-col md:w-full md:justify-end md:gap-6 md:flex-row space-y-4 md:space-y-0">
-          <li>
-            <Link
-              to="/aboutus"
-              className="hover:underline font-bold flex items-center gap-2"
+        <ul className="flex flex-col md:w-full md:justify-end md:gap-6 md:flex-row space-y-4 md:space-y-0 relative">
+          <li className="relative">
+            <button
+              onClick={toggleDropdown}
+              className="hover:underline font-semibold flex items-center gap-2"
             >
               <FaInfoCircle /> About
-            </Link>
+            </button>
+            {isDropdownOpen && (
+              <ul className="absolute left-0 mt-2 w-48 bg-white shadow-xl rounded-lg overflow-hidden z-50 transition-all duration-300 ease-out">
+                <li>
+                  <Link
+                    to="/aboutus/universityinfo"
+                    onClick={handleLinkClick}
+                    className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
+                  >
+                    University Information
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/aboutus/contactinfo"
+                    onClick={handleLinkClick}
+                    className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
+                  >
+                    Contact Information
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/aboutus/dtted"
+                    onClick={handleLinkClick}
+                    className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
+                  >
+                    Department of Technical & Technology Education
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/aboutus/team"
+                    onClick={handleLinkClick}
+                    className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
+                  >
+                    Our Team
+                  </Link>
+                </li>
+              </ul>
+            )}
           </li>
           <li>
             <Link
               to="/alumni"
-              className="hover:underline font-bold flex items-center gap-2"
+              onClick={handleLinkClick}
+              className="hover:underline font-semibold flex items-center gap-2"
             >
               <FaUserGraduate /> Alumni
             </Link>
@@ -70,7 +121,8 @@ const Header = () => {
           <li>
             <Link
               to="/activities"
-              className="hover:underline font-bold flex items-center gap-2"
+              onClick={handleLinkClick}
+              className="hover:underline font-semibold flex items-center gap-2"
             >
               <FaClipboardList /> Activities
             </Link>
@@ -78,7 +130,8 @@ const Header = () => {
           <li>
             <Link
               to="/announcements"
-              className="hover:underline font-bold flex items-center gap-2"
+              onClick={handleLinkClick}
+              className="hover:underline font-semibold flex items-center gap-2"
             >
               <FaBullhorn /> Announcements
             </Link>

@@ -8,6 +8,9 @@ import AboutUs from './components/AboutUs';
 import Announcements from './pages/announcement';
 import Activities from './pages/activities';
 import ContactUs from './components/ContactUs';
+import UniversityInformation from "./pages/universityinfo";
+import ContactInfo from "./pages/contactinfo";
+import DTTED from "./pages/dtted";
 
 function App() {
   return (
@@ -22,6 +25,10 @@ function App() {
           <Route path="/activities" element={<Activities />} />
           <Route path="/announcements" element={<Announcements />} />
           <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/aboutus/universityinfo" element={<UniversityInformation />} />
+          <Route path="/aboutus/contactinfo" element={<ContactInfo />} />
+          <Route path="/aboutus/dtted" element={<DTTED />} />
+
         </Routes>
       </main>
       <Footer />

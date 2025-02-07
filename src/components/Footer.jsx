@@ -16,7 +16,7 @@ const Footer = () => {
           />
           <div className="ml-10">
             <a href="/aboutus">
-              <h1 className="text-white text-sm mb-2 font-semibold hover:underline">About Us</h1>
+              <h1 className="text-white text-sm mb-2 font-semibold hover:underline">About</h1>
             </a>
             <a href="/activities">
               <h2 className="text-white text-sm mb-2 font-semibold hover:underline">Activities</h2>
