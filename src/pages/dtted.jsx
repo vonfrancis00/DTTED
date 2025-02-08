@@ -67,7 +67,7 @@ const Dtted = () => {
           </p>
           <ul className="gap-8">
             <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-10">
-              <Link to="/dtled">
+              <Link to="/">
               <h3 className="text-2xl font-bold text-center hover:underline text-blue-800 mb-2">Bachelor of Technology and Livelihood Education (BTLED)</h3>
               </Link>
               <p className="text-gray-700 text-lg">
@@ -84,7 +84,9 @@ const Dtted = () => {
               </ul>
             </li>
             <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-20">
-              <h3 className="text-2xl font-bold text-blue-800 mb-2">Bachelor in Technical-Vocational Teacher Education (BTVTEd)</h3>
+              <Link to="/dtvted">
+                <h3 className="text-2xl font-bold hover:underline text-center text-blue-800 mb-2">Bachelor in Technical-Vocational Teacher Education (BTVTEd)</h3>
+              </Link>
               <p className="text-gray-700 text-lg">
               The Bachelor in Technical-Vocational Teacher Education (BTVTEd) is a four-year program designed to prepare future teachers in Technical and Vocational Education and Training (TVET) 
               for roles in TLE, Senior High School, and TVET institutions. It equips students with the knowledge, skills, attitudes, and values necessary for effective teaching. 
