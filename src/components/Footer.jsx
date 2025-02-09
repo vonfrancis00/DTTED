@@ -1,17 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
-  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null); // Track which dropdown is open
+  const footerRef = useRef(null); // Reference for the footer
 
-  const toggleAboutDropdown = () => {
-    setIsAboutDropdownOpen(!isAboutDropdownOpen);
+  // Toggle dropdown (About or Alumni)
+  const toggleDropdown = (dropdown) => {
+    setOpenDropdown(openDropdown === dropdown ? null : dropdown); // Toggle the same dropdown or open the new one
   };
 
+  // Close dropdowns if clicking outside of the footer
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (footerRef.current && !footerRef.current.contains(event.target)) {
+        setOpenDropdown(null); // Close all dropdowns if clicked outside
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <footer className="bg-blue-800 text-white p-5">
+    <footer ref={footerRef} className="bg-blue-800 text-white p-5">
       <div className="flex justify-between items-start mb-5">
         <div className="flex items-start">
           <img 
@@ -20,10 +36,13 @@ const Footer = () => {
             className="max-w-[100px] h-auto mb-4" 
           />
           <div className="ml-10">
-            <button onClick={toggleAboutDropdown} className="text-white text-sm mb-2 font-semibold hover:underline">
+            <button 
+              onClick={() => toggleDropdown('about')} 
+              className="text-white text-sm mb-2 font-semibold hover:underline"
+            >
               About
             </button>
-            {isAboutDropdownOpen && (
+            {openDropdown === 'about' && (
               <ul className="text-white text-sm ml-6 space-y-2 mb-5">
                 <li>
                   <a href="/aboutus/universityinfo" className="hover:underline">University Information</a>
@@ -42,11 +61,27 @@ const Footer = () => {
             <a href="/activities">
               <h2 className="text-white text-sm mb-2 font-semibold hover:underline">Activities</h2>
             </a>
-            <a href="/alumni">
-              <h3 className="text-white text-sm mb-2 font-semibold hover:underline">Alumni</h3>
-            </a>
+            <button 
+              onClick={() => toggleDropdown('alumni')} 
+              className="text-white text-sm mb-2 font-semibold hover:underline"
+            >
+              Alumni
+            </button>
+            {openDropdown === 'alumni' && (
+              <ul className="text-white text-sm ml-6 space-y-2 mb-5">
+                <li>
+                  <a href="/alumni/graduate" className="hover:underline">Graduates Announcement for DTTED</a>
+                </li>
+                <li>
+                  <a href="/alumni/joboffer" className="hover:underline">Job Offers</a>
+                </li>
+                <li>
+                  <a href="/alumni/seminar" className="hover:underline">Seminars</a>
+                </li>
+              </ul>
+            )}
             <a href="/announcements">
-            <h3 className="text-white text-sm mb-2 font-semibold hover:underline">Announcement</h3>
+              <h3 className="text-white text-sm mb-2 font-semibold hover:underline">Announcement</h3>
             </a>
           </div>
         </div>
@@ -87,6 +122,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

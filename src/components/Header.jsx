@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import {
   FaBars,
@@ -13,30 +13,54 @@ const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isAlumniDropdownOpen, setIsAlumniDropdownOpen] = useState(false);
+  
+  const headerRef = useRef(null); // Reference for the header
 
+  // Toggle sidebar
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
     setIsAboutDropdownOpen(false);
     setIsAlumniDropdownOpen(false);
   };
 
+  // Toggle About dropdown
   const toggleAboutDropdown = () => {
     setIsAboutDropdownOpen(!isAboutDropdownOpen);
     setIsAlumniDropdownOpen(false);
   };
 
+  // Toggle Alumni dropdown
   const toggleAlumniDropdown = () => {
     setIsAlumniDropdownOpen(!isAlumniDropdownOpen);
     setIsAboutDropdownOpen(false);
   };
 
+  // Close dropdowns when a link is clicked
   const handleLinkClick = () => {
     setIsAboutDropdownOpen(false);
     setIsAlumniDropdownOpen(false);
   };
 
+  // Close dropdowns if clicking outside of the header
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (headerRef.current && !headerRef.current.contains(event.target)) {
+        setIsAboutDropdownOpen(false);
+        setIsAlumniDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <header className="bg-yellow-400 text-blue-800 px-8 py-2 flex flex-row items-center fixed top-0 left-0 w-full z-50">
+    <header
+      ref={headerRef}
+      className="bg-yellow-400 text-blue-800 px-8 py-2 flex flex-row items-center fixed top-0 left-0 w-full z-50"
+    >
       <div className="container mx-auto flex justify-between items-center">
         <div className="bg-white rounded-md min-h-[60px] min-w-[60px] max-h-[60px] max-w-[60px] p-1">
           <Link to="/" onClick={handleLinkClick}>
@@ -112,20 +136,29 @@ const Header = () => {
               <ul className="absolute left-0 mt-2 w-48 bg-white shadow-xl rounded-lg overflow-hidden z-50 transition-all duration-300 ease-out">
                 <li>
                   <Link
-                    to="/alumni/events"
+                    to="/alumni/graduate"
                     onClick={handleLinkClick}
                     className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
                   >
-                    Alumni Events
+                    Graduates Announcement for DTTED
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/alumni/network"
+                    to="/alumni/joboffer"
                     onClick={handleLinkClick}
                     className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
                   >
-                    Alumni Network
+                    Job Offers
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/alumni/seminar"
+                    onClick={handleLinkClick}
+                    className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
+                  >
+                    Seminars
                   </Link>
                 </li>
               </ul>

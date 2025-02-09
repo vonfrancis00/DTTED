@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ModalAnnounce from './modalannounce';
 
 const Announcements = () => {
@@ -27,7 +27,9 @@ const Announcements = () => {
     setIsModalOpen(false);
     setSelectedAnnouncement(null);
   };
-
+  useEffect(() => {
+          window.scrollTo(0, 0);
+      }, []);
   return (
     <div className="container mx-auto px-6 py-8 mt-20 mb-20">
       <h2 className="text-4xl font-extrabold text-center text-blue-900 mb-6">ANNOUNCEMENTS</h2>
