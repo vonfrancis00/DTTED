@@ -65,11 +65,12 @@ const TeacherEducation = () => {
     };
 
     return (
+        <div>
+        
         <section className="container mx-auto py-10">
             <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-6 mt-20">
                 BACHELOR OF TECHNICAL-VOCATIONAL TEACHER EDUCATION MAJOR IN FOOD SERVICE MANAGEMENT (BTVTEd- Food Service Management)
             </h2>
-
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 {Object.entries(foodServiceGroups).map(([yearLevel, images], index) => (
                     <div key={index} className="relative cursor-pointer" 
@@ -198,7 +199,7 @@ const TeacherEducation = () => {
             BACHELOR OF TECHNICAL-VOCATIONAL TEACHER EDUCATION MAJOR IN COMPUTER SYSTEM SERVICING(BTVTEd- Computer System Servicing)
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-2">
                 {Object.entries(computerSystemGroups).map(([yearLevel, images], index) => (
                     <div key={index} className="relative cursor-pointer" 
                          onClick={() => { 
@@ -258,6 +259,57 @@ const TeacherEducation = () => {
                 </div>
             )}
         </section>
+        <section className="container mx-auto py-16 bg-gray-50 mt-2 rounded-lg shadow-xl">
+    <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
+        Program Outcomes
+    </h2>
+    <p className="text-xl font-bold text-gray-700 text-center mb-6">
+        Upon completing the program, graduates will be able to:
+    </p>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <ul className="list-disc pl-6 text-lg text-gray-700 space-y-4">
+            <li>
+                Demonstrate competence and mastery in teaching the subject or area of specialization as required by the 
+                Philippine TVET Trainers-Assessors Qualification Framework (PTTQF).
+            </li>
+            <li>
+                Practice professional and ethical teaching standards sensitive to local, national, and global realities, as prescribed by UNESCO.
+            </li>
+            <li>
+                Pursue lifelong learning for personal and professional growth through experiential and field-based opportunities.
+            </li>
+            <li>
+                Develop research and innovations that can contribute to the improvement of the community and the well-being of individuals.
+            </li>
+            <li>
+                Demonstrate professionalism and excellence in leadership and technical contributions while promoting unity and stewardship.
+            </li>
+        </ul>
+        <ul className="list-disc pl-6 text-lg text-gray-700 space-y-4">
+            <li>
+                Exhibit research capacity and teaching competencies in their chosen specialization.
+            </li>
+            <li>
+                Conduct research to improve the teaching-learning process and develop innovations for educational, commercial, and other purposes.
+            </li>
+            <li>
+                Demonstrate broad and coherent knowledge and skills in their field of study for professional work and lifelong learning.
+            </li>
+            <li>
+                Preserve and promote Filipino historical and cultural heritage as reflected in contextualized instruction, research, and innovations.
+            </li>
+            <li>
+                Apply specialized knowledge and skills with minimal supervision in any specific field within technical-vocational teacher education.
+            </li>
+        </ul>
+    </div>
+    <div className="mt-5 text-center">
+        <p className="text-lg font-bold text-gray-700">
+            This program ensures that graduates are fully equipped to meet the growing demands of the workforce and contribute meaningfully to their communities and fields.
+        </p>
+    </div>
+</section>
+        </div>
     );
 };
 

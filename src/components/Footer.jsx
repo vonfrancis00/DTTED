@@ -45,6 +45,9 @@ const Footer = () => {
             <a href="/alumni">
               <h3 className="text-white text-sm mb-2 font-semibold hover:underline">Alumni</h3>
             </a>
+            <a href="/announcements">
+            <h3 className="text-white text-sm mb-2 font-semibold hover:underline">Announcement</h3>
+            </a>
           </div>
         </div>
 
