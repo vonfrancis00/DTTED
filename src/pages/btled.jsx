@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const LivelihoodEducation = () => {
     const [selectedGroup, setSelectedGroup] = useState(null);
@@ -40,6 +40,12 @@ const LivelihoodEducation = () => {
             "/HomeEconomic/HomeEconomic(4thyr2ndsem).png"
         ]
     };
+
+    // Scroll to top when the page loads
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);  // Empty dependency array ensures it runs only once when the component is mounted.
+
     return (
         <div>
         <section className="container mx-auto py-10">
@@ -220,12 +226,13 @@ const LivelihoodEducation = () => {
         </div>
         <div className="mt-5 text-center">
             <p className="text-lg font-bold text-gray-700">
-                This program ensures that graduates are fully equipped to meet the growing demands of the workforce and contribute meaningfully to their communities and fields.
+                This program ensures that graduates are fully equipped to meet the growing demands of the workforce and contribute meaningfully to their communities.
             </p>
         </div>
     </section>
-            </div>
-    );
+</div>
 
+    );
 };
+
 export default LivelihoodEducation;

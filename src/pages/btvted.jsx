@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const TeacherEducation = () => {
     const [selectedGroup, setSelectedGroup] = useState(null);
@@ -63,7 +63,9 @@ const TeacherEducation = () => {
             "/computersystem/computersystem(4thyr2ndsem).png"
         ]
     };
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div>
         
