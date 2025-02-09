@@ -6,38 +6,38 @@ const LivelihoodEducation = () => {
 
     const IndustrialArtGroup = {
         "1st year" : [
-            "/IndustrialArt(1styr1stsem).png",
-            "/IndustrialArt(1styr2ndsem).png"
+            "/IndustrialArt/IndustrialArt(1styr1stsem).png",
+            "/IndustrialArt/IndustrialArt(1styr2ndsem).png"
         ],
         "2nd year" : [
-            "/IndustrialArt(2ndyr1stsem).png",
-            "/IndustrialArt(2ndyr2ndsem).png"
+            "/IndustrialArt/IndustrialArt(2ndyr1stsem).png",
+            "/IndustrialArt/IndustrialArt(2ndyr2ndsem).png"
         ],
         "3rd year" : [
-            "/IndustrialArt(3rdyr1stsem).png",
-            "/IndustrialArt(3rdyr2ndsem).png"
+            "/IndustrialArt/IndustrialArt(3rdyr1stsem).png",
+            "/IndustrialArt/IndustrialArt(3rdyr2ndsem).png"
         ],
         "4th year" : [
-            "/IndustrialArt(4thyr1stsem).png",
-            "/IndustrialArt(4thyr2ndsem).png"
+            "/IndustrialArt/IndustrialArt(4thyr1stsem).png",
+            "/IndustrialArt/IndustrialArt(4thyr2ndsem).png"
         ]
     };
     const HomeEconomicGroup = {
         "1st year" : [
-            "/HomeEconomic(1styr1stsem).png",
-            "/HomeEconomic(1styr2ndsem).png"
+            "/HomeEconomic/HomeEconomic(1styr1stsem).png",
+            "/HomeEconomic/HomeEconomic(1styr2ndsem).png"
         ],
         "2nd year" : [
-            "/HomeEconomic(2ndyr1stsem).png",
-            "/HomeEconomic(2bdyr2ndsem).png"
+            "/HomeEconomic/HomeEconomic(2ndyr1stsem).png",
+            "/HomeEconomic/HomeEconomic(2bdyr2ndsem).png"
         ],
         "3rd year" : [
-            "/HomeEconomic(3rdyr1stsem).png",
-            "/HomeEconomic(3rdyr2ndsem).png"
+            "/HomeEconomic/HomeEconomic(3rdyr1stsem).png",
+            "/HomeEconomic/HomeEconomic(3rdyr2ndsem).png"
         ],
         "4th year" : [
-            "/HomeEconomic(4thyr1stsem).png",
-            "/HomeEconomic(4thyr2ndsem).png"
+            "/HomeEconomic/HomeEconomic(4thyr1stsem).png",
+            "/HomeEconomic/HomeEconomic(4thyr2ndsem).png"
         ]
     };
     return (

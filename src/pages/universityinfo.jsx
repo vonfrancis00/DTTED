@@ -78,9 +78,7 @@ const UniversityInformation = () => {
             </section>
           </div>
 
-
-
-          <div className="bg-white max-w-full mx-auto p-8 rounded-lg shadow-xl mt-20">
+          <div className="bg-white max-w-full mx-auto p-8 rounded-lg shadow-xl mt-10">
           <section>
           <h2 className="text-3xl font-extrabold text-blue-800 mb-4">USTP Updates</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -1,67 +1,70 @@
 import React, { useState } from 'react';
+import ModalAnnounce from './modalannounce';
 
 const Announcements = () => {
-  const [announcements, setAnnouncements] = useState([
-    { title: "Seminar on Future of Education", description: "Join us for an exciting seminar on the future of education. Date: May 10, 2024." },
-    { title: "Research Paper Submission Deadline", description: "Deadline for submitting research papers is June 15, 2024. Don't miss it!" },
-  ]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedAnnouncement, setSelectedAnnouncement] = useState(null);
 
-  const [newAnnouncement, setNewAnnouncement] = useState({
-    title: "",
-    description: "",
-  });
+  const announcements = [
+    { 
+      title: "Attention MTTE and DTE Students!", 
+      description: `Mark your calendars! The Comprehensive Exam schedule has been released. DEADLINE FOR APPLICATION: February 28, 2025. Please present your Complete Academic Requirement (CAR) Certificate upon application. MTTE: Choose two core courses and two major courses. DTE: Choose two core courses and four major courses. For more information, contact Sir Jomar P. Flores and Dr. Aljon Y. Sumod-ong.`,
+      image: "/announcement(1).png",
+    },
+    { 
+      title: "New Chapter for the Department", 
+      description: `A new chapter begins for the Department of Technical and Technology Education as we proudly welcome our new Department Head, Dr. Aljon Y. Sumod-ong.`,
+      image: "/announcement(2).png",
+    }
+  ];
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setNewAnnouncement((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
+  const handleOpenModal = (announcement) => {
+    setSelectedAnnouncement(announcement);
+    setIsModalOpen(true);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setAnnouncements([...announcements, newAnnouncement]);
-    setNewAnnouncement({ title: "", description: "" });
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedAnnouncement(null);
   };
 
   return (
     <div className="container mx-auto px-6 py-8 mt-20 mb-20">
-      <h2 className="text-3xl font-bold text-center mb-6">Announcements</h2>
+      <h2 className="text-4xl font-extrabold text-center text-blue-900 mb-6">ANNOUNCEMENTS</h2>
+      
       <div className="mb-6">
-        <h3 className="text-2xl font-semibold text-center mb-4">Latest Announcements</h3>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+        <h3 className="text-3xl font-semibold text-center text-blue-800 mb-4">Latest Announcements</h3>
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {announcements.map((announcement, index) => (
-            <li key={index} className="bg-yellow-400 p-4 shadow-md rounded-lg">
-              <h4 className="font-semibold text-xl text-blue-900">{announcement.title}</h4>
-              <p className="text-gray-600 text-black">{announcement.description}</p>
+            <li key={index} className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl">
+              <img 
+                src={announcement.image} 
+                alt={announcement.title} 
+                className="w-full h-auto rounded-lg mb-4"
+              />
+              
+              <h4 className="text-2xl font-semibold text-blue-900 mb-3">{announcement.title}</h4>
+              <p className="text-gray-700 text-lg">{announcement.description.substring(0, 100)}...</p>
+              <button 
+                onClick={() => handleOpenModal(announcement)} 
+                className="mt-4 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700"
+              >
+                Read More
+              </button>
             </li>
           ))}
         </ul>
       </div>
 
-      <div>
-        <h3 className="text-2xl font-semibold text-center mb-4">Add New Announcement</h3>
-        <form onSubmit={handleSubmit} className="space-y-4 max-w-xl mx-auto">
-          <input
-            type="text"
-            name="title"
-            value={newAnnouncement.title}
-            onChange={handleChange}
-            placeholder="Announcement Title"
-            className="border p-2 w-full rounded-md"
-          />
-          <textarea
-            name="description"
-            value={newAnnouncement.description}
-            onChange={handleChange}
-            placeholder="Announcement Description"
-            className="border p-2 w-full rounded-md"
-            rows="4"
-          />
-          <button type="submit" className="bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700 w-full">Submit Announcement</button>
-        </form>
-      </div>
+      {selectedAnnouncement && (
+        <ModalAnnounce 
+          isOpen={isModalOpen} 
+          onClose={handleCloseModal}
+          title={selectedAnnouncement.title}
+          description={selectedAnnouncement.description}
+          image={selectedAnnouncement.image}
+        />
+      )}
     </div>
   );
 };

@@ -6,61 +6,61 @@ const TeacherEducation = () => {
 
     const foodServiceGroups = {
         "1st Year": [
-            "/foodservices(1styr1stsem).png",
-            "/foodservices(1styr2ndsem).png"
+            "/foodservices/foodservices(1styr1stsem).png",
+            "/foodservices/foodservices(1styr2ndsem).png"
         ],
         "2nd Year": [
-            "/foodservices(2ndyr1stsem).png",
-            "/foodservices(2ndyr2ndsem).png"
+            "/foodservices/foodservices(2ndyr1stsem).png",
+            "/foodservices/foodservices(2ndyr2ndsem).png"
         ],
         "3rd Year": [
-            "/foodservices(3rdyr1stsem).png",
-            "/foodservices(3rdyr2ndsem).png",
-            "/foodservices(3rdyrSummer).png"
+            "/foodservices/foodservices(3rdyr1stsem).png",
+            "/foodservices/foodservices(3rdyr2ndsem).png",
+            "/foodservices/foodservices(3rdyrSummer).png"
         ],
         "4th Year": [
-            "/foodservices(4thyr1stsem).png",
-            "/foodservices(4thyr2ndsem).png"
+            "/foodservices/foodservices(4thyr1stsem).png",
+            "/foodservices/foodservices(4thyr2ndsem).png"
         ]
     };
 
     const fashionGarmentsGroups = {
         "1st Year": [
-            "/fashiongarments(1styr1stsem).png",
-            "/fashiongarments(1styr2ndsem).png"
+            "/fashiongarments/fashiongarments(1styr1stsem).png",
+            "/fashiongarments/fashiongarments(1styr2ndsem).png"
         ],
         "2nd Year": [
-            "/fashiongarments(2ndyr1stsem).png",
-            "/fashiongarments(2ndyr2ndsem).png"
+            "/fashiongarments/fashiongarments(2ndyr1stsem).png",
+            "/fashiongarments/fashiongarments(2ndyr2ndsem).png"
         ],
         "3rd Year": [
-            "/fashiongarments(3rdyr1stsem).png",
-            "/fashiongarments(3rdyr2ndsem).png",
-            "/fashiongarments(3rdyrSummer).png"
+            "/fashiongarments/fashiongarments(3rdyr1stsem).png",
+            "/fashiongarments/fashiongarments(3rdyr2ndsem).png",
+            "/fashiongarments/fashiongarments(3rdyrSummer).png"
         ],
         "4th Year": [
-            "/fashiongarments(4thyr1stsem).png",
-            "/fashiongarments(4thyr2ndsem).png"
+            "/fashiongarments/fashiongarments(4thyr1stsem).png",
+            "/fashiongarments/fashiongarments(4thyr2ndsem).png"
         ]
     };
 
     const computerSystemGroups = {
         "1st Year": [
-            "/computersystem(1styr1stsem).png",
-            "/computersystem(1styr2ndsem).png"
+            "/computersystem/computersystem(1styr1stsem).png",
+            "/computersystem/computersystem(1styr2ndsem).png"
         ],
         "2nd Year": [
-            "/computersystem(2ndyr1stsem).png",
-            "/computersystem(2ndyr2ndsem).png"
+            "/computersystem/computersystem(2ndyr1stsem).png",
+            "/computersystem/computersystem(2ndyr2ndsem).png"
         ],
         "3rd Year": [
-            "/computersystem(3rdyr1stsem).png",
-            "/computersystem(3rdyr2ndsem).png",
-            "/computersystem(3rdyrSummer).png"
+            "/computersystem/computersystem(3rdyr1stsem).png",
+            "/computersystem/computersystem(3rdyr2ndsem).png",
+            "/computersystem/computersystem(3rdyrSummer).png"
         ],
         "4th Year": [
-            "/computersystem(4thyr1stsem).png",
-            "/computersystem(4thyr2ndsem).png"
+            "/computersystem/computersystem(4thyr1stsem).png",
+            "/computersystem/computersystem(4thyr2ndsem).png"
         ]
     };
 

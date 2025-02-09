@@ -70,11 +70,11 @@ const Dtted = () => {
               <Link to="/dtled">
               <h3 className="text-2xl font-bold text-center hover:underline text-blue-800 mb-2">Bachelor of Technology and Livelihood Education (BTLED)</h3>
               </Link>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-xl">
               The Bachelor of Technology and Livelihood Education (BTLED) program is design to equip future teachers who will be teaching the Technology and Livelihood Education 
               subjects for Grades 4 to 8 in the basic education. Specifically, the BTLEd program is expected to produce teachers who can assume the following major roles:<b/>  
               </p>
-              <ul className="list-disc pl-6 text-gray-700 text-lg">
+              <ul className="list-disc pl-6 text-gray-700 text-xl">
                 <li>Effective synthesizers of organized knowledge to allow analytical and critical thinking skills.</li>
                 <li>Efficient and effective promoters and facilitators of learning to enable the learners to develop to the fullest their potential for a continuing pursuit of lifelong learning in technology and livelihood education.</li>
                 <li>Committed humanists whose clear understanding and appreciation of human ideals and values inspire learners to realize their potential.</li>
@@ -87,7 +87,7 @@ const Dtted = () => {
               <Link to="/dtvted">
                 <h3 className="text-2xl font-bold hover:underline text-center text-blue-800 mb-2">Bachelor in Technical-Vocational Teacher Education (BTVTEd)</h3>
               </Link>
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-700 text-xl">
               The Bachelor in Technical-Vocational Teacher Education (BTVTEd) is a four-year program designed to prepare future teachers in Technical and Vocational Education and Training (TVET) 
               for roles in TLE, Senior High School, and TVET institutions. It equips students with the knowledge, skills, attitudes, and values necessary for effective teaching. 
               BTVTEd graduates meet TESDA’s Trainer’s Methodology requirement and are exempt from the TM assessment after passing the licensure exam. The program also aims to develop teachers 
@@ -99,41 +99,32 @@ const Dtted = () => {
 
         {/* Faculty Section */}
         <section>
-          <h2 className="text-3xl font-bold text-blue-800 mb-4">Meet Our Faculty</h2>
+          <h2 className="text-3xl text-center font-bold text-blue-800 mb-4">Meet Our Faculty</h2>
           <p className="text-lg text-gray-700 mb-4">
             Our VGMO faculty members are highly experienced professionals with a deep understanding of global management.
             Meet some of our esteemed professors:
           </p>
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <img
-                src="https://via.placeholder.com/150"
+                src="/no-image(1).avif"
                 alt="Faculty Member"
                 className="w-32 h-32 rounded-full mx-auto mb-4"
               />
-              <h3 className="text-2xl font-semibold text-blue-800 mb-2">PROF 1</h3>
-              <p className="text-gray-700 mb-2">Professor of Global Business Strategy</p>
-              <p className="text-gray-500">Professor bio will be here.</p>
+              <h3 className="text-2xl text-center font-bold text-blue-800 mb-2">Grace Pimentel, PhD</h3>
+              <p className="text-gray-700 text-center text-lg mb-2">CSTE DEAN</p>
+              {/* <p className="text-gray-500">Professor bio will be here.</p> */}
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <img
-                src="https://via.placeholder.com/150"
+                src="/no-image(1).avif"
                 alt="Faculty Member"
                 className="w-32 h-32 rounded-full mx-auto mb-4"
               />
-              <h3 className="text-2xl font-semibold text-blue-800 mb-2">PROF 2</h3>
-              <p className="text-gray-700 mb-2">Professor of International Marketing</p>
-              <p className="text-gray-500">Professor bio will be here.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img
-                src="https://via.placeholder.com/150"
-                alt="Faculty Member"
-                className="w-32 h-32 rounded-full mx-auto mb-4"
-              />
-              <h3 className="text-2xl font-semibold text-blue-800 mb-2">PROF 3</h3>
-              <p className="text-gray-700 mb-2">Professor of Cross-Cultural Communication</p>
-              <p className="text-gray-500">Professor bio will be here.</p>
+              <h3 className="text-2xl text-center font-bold text-blue-800 mb-2">Aljun Sumud-ong, PhD</h3>
+              <p className="text-gray-700 text-center text-lg mb-2">DTTED Chairman</p>
+              {/* <p className="text-gray-500">Professor bio will be here.</p> */}
             </div>
           </div>
         </section>

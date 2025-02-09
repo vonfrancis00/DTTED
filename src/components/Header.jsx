@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   FaBars,
@@ -13,7 +13,6 @@ const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isAlumniDropdownOpen, setIsAlumniDropdownOpen] = useState(false);
-  const [headerOpacity, setHeaderOpacity] = useState(1);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -36,24 +35,8 @@ const Header = () => {
     setIsAlumniDropdownOpen(false);
   };
 
-  const handleScroll = () => {
-    const scrollY = window.scrollY;
-    const newOpacity = Math.max(0.7, 1 - scrollY / 200);
-    setHeaderOpacity(newOpacity);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <header
-      className="bg-yellow-400 text-blue-800 px-8 py-2 flex flex-row items-center fixed top-0 left-0 w-full z-50"
-      style={{ opacity: headerOpacity }}
-    >
+    <header className="bg-yellow-400 text-blue-800 px-8 py-2 flex flex-row items-center fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className="bg-white rounded-md min-h-[60px] min-w-[60px] max-h-[60px] max-w-[60px] p-1">
           <Link to="/" onClick={handleLinkClick}>
@@ -65,7 +48,9 @@ const Header = () => {
         </button>
       </div>
       <nav
-        className={`$${isSidebarOpen ? "block" : "hidden"} md:block md:flex md:space-x-6 md:w-full p-4 md:p-0 transition-transform duration-300 ease-in-out`}
+        className={`${
+          isSidebarOpen ? "block" : "hidden"
+        } md:block md:flex md:space-x-6 md:w-full p-4 md:p-0 transition-transform duration-300 ease-in-out`}
       >
         <ul className="flex flex-col md:w-full md:justify-end md:gap-6 md:flex-row space-y-4 md:space-y-0 relative">
           <li className="relative">
@@ -88,15 +73,6 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to="/aboutus/contactinfo"
-                    onClick={handleLinkClick}
-                    className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
-                  >
-                    Contact Information
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     to="/aboutus/dtted"
                     onClick={handleLinkClick}
                     className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
@@ -111,6 +87,15 @@ const Header = () => {
                     className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
                   >
                     Our Team
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/aboutus/contactinfo"
+                    onClick={handleLinkClick}
+                    className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
+                  >
+                    Contact Information
                   </Link>
                 </li>
               </ul>

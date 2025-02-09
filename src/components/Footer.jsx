@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+
+  const toggleAboutDropdown = () => {
+    setIsAboutDropdownOpen(!isAboutDropdownOpen);
+  };
+
   return (
     <footer className="bg-blue-800 text-white p-5">
       <div className="flex justify-between items-start mb-5">
-
         <div className="flex items-start">
           <img 
             src="/ustp.png" 
@@ -15,9 +20,25 @@ const Footer = () => {
             className="max-w-[100px] h-auto mb-4" 
           />
           <div className="ml-10">
-            <a href="/aboutus/team">
-              <h1 className="text-white text-sm mb-2 font-semibold hover:underline">About</h1>
-            </a>
+            <button onClick={toggleAboutDropdown} className="text-white text-sm mb-2 font-semibold hover:underline">
+              About
+            </button>
+            {isAboutDropdownOpen && (
+              <ul className="text-white text-sm ml-6 space-y-2 mb-5">
+                <li>
+                  <a href="/aboutus/universityinfo" className="hover:underline">University Information</a>
+                </li>
+                <li>
+                  <a href="/aboutus/dtted" className="hover:underline">Department of Technical & Technology Education</a>
+                </li>
+                <li>
+                  <a href="/aboutus/team" className="hover:underline">Our Team</a>
+                </li>
+                <li>
+                  <a href="/aboutus/contactinfo" className="hover:underline">Contact Information</a>
+                </li>
+              </ul>
+            )}
             <a href="/activities">
               <h2 className="text-white text-sm mb-2 font-semibold hover:underline">Activities</h2>
             </a>
@@ -52,14 +73,14 @@ const Footer = () => {
               <FaYoutube className="text-white hover:text-red-500 transition-colors" size={20} />
             </a>
             <a href="/contactus">
-          <h4 className="text-gray-400 text-sm mr-10 hover:underline">Contact Us</h4>
-        </a>
+              <h4 className="text-gray-400 text-sm mr-10 hover:underline">Contact Us</h4>
+            </a>
           </div>
         </div>
       </div>
       <div className="border-t border-gray mt-4"></div>
       <div className="text-center text-sm mt-3">
-      <p className="text-yellow-500 text-sm mt-5">© 2024 Department of Technical and Technology Education. All Rights Reserved.</p>
+        <p className="text-yellow-500 text-sm mt-5">© 2024 Department of Technical and Technology Education. All Rights Reserved.</p>
       </div>
     </footer>
   );
