@@ -67,7 +67,7 @@ const Dtted = () => {
           </p>
           <ul className="gap-8">
             <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-10">
-              <Link to="/">
+              <Link to="/dtled">
               <h3 className="text-2xl font-bold text-center hover:underline text-blue-800 mb-2">Bachelor of Technology and Livelihood Education (BTLED)</h3>
               </Link>
               <p className="text-gray-700 text-lg">
