@@ -174,62 +174,53 @@ const LivelihoodEducation = () => {
                 </div>
             )}
         </section>
-        <section className="container mx-auto py-16 bg-gray-50 mt-2 rounded-lg shadow-xl">
-        <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8">
-            Program Outcomes
-        </h2>
-        <p className="text-xl font-bold text-gray-700 text-center mb-6">
-            Upon graduating in the program, the students shall be able to:
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
-            <ul className="list-disc pl-6 text-lg text-gray-700 space-y-4">
-                <li>
-                    Demonstrate broad and coherent knowledge and skills in teaching Home Economics, Industrial Arts, 
-                    Information Communication Technology and Agri-Fishery Arts respectively
-                </li>
-                <li>
-                    Work and function effectively as an individual and as member or a leader in a diverse 
-                    team recognizing the different roles within a team.
-                </li>
-                <li>
-                    Apply the principles of professional teaching by integrating core content and interdisciplinary themes through 
-                    engaging the students in activities that promote Creativity, Critical Thinking, Communication, and Collaboration 
-                    in preparation for the 21st-Century research-based skills.
-                </li>
-                <li>
-                    Apply competencies in the utilization and integration of ICT in teaching-learning practices to promote excellence, 
-                    relevant and sustainable educational practices.
-                </li>
-                <li>
-                    Demonstrate higher level Global Awareness, Financial, Economic, Business, Entrepreneurial Literacy, 
-                    Civic Literacy, Health Literacy, and Environmental Literacy.
-                </li>
-            </ul>
-            <ul className="list-disc pl-6 text-lg text-gray-700 space-y-4">
+        <section className="container mx-auto py-20 bg-white mt-4 rounded-xl shadow-lg">
+    <h2 className="text-5xl font-extrabold text-center text-gray-900 mb-8">
+        Program Outcomes
+    </h2>
+    <p className="text-xl font-semibold text-gray-800 text-center mb-12 px-6">
+        Upon graduating from the program, students will be able to:
+    </p>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-4xl mx-auto">
+        <ul className="list-disc pl-6 text-lg text-gray-700 space-y-6">
             <li>
-                    Engage in the generation of new knowledge and advancement of existing knowledge through research and development projects in the 
-                    fields of Home Economics, Industrial Arts, Information Communication Technology and Agri-Fishery aligned to regional and 
-                    national development agenda or goals.
-                </li>
-                <li>
-                    Apply a wide range of teaching process skills including curriculum development, lesson planning, instructional material development, 
-                    educational assessment and teaching approaches.
-                </li>
-                <li>
-                    Apply with minimal supervision the acquired professional knowledge and skills in teaching in the fields of Home Economics, Industrial Arts, 
-                    Information Communication Technology and Agri-Fishery Arts.
-                </li>
-                <li>
-                    Show a deep and principled understanding of how educational processes relate to larger historical, social, cultural, and political processes.
-                </li>
-            </ul>
-        </div>
-        <div className="mt-5 text-center">
-            <p className="text-lg font-bold text-gray-700">
-                This program ensures that graduates are fully equipped to meet the growing demands of the workforce and contribute meaningfully to their communities.
-            </p>
-        </div>
-    </section>
+                <strong className="font-semibold text-gray-800">Demonstrate broad and coherent knowledge and skills</strong> in teaching Home Economics, Industrial Arts, Information Communication Technology, and Agri-Fishery Arts respectively.
+            </li>
+            <li>
+                <strong className="font-semibold text-gray-800">Work effectively as an individual</strong> and as a member or leader in a diverse team, recognizing the different roles within a team.
+            </li>
+            <li>
+                <strong className="font-semibold text-gray-800">Apply the principles of professional teaching</strong> by integrating core content and interdisciplinary themes through activities that promote Creativity, Critical Thinking, Communication, and Collaboration in preparation for 21st-century skills.
+            </li>
+            <li>
+                <strong className="font-semibold text-gray-800">Utilize ICT in teaching-learning practices</strong> to promote excellence, relevant and sustainable educational practices.
+            </li>
+            <li>
+                <strong className="font-semibold text-gray-800">Demonstrate global awareness</strong>, including Financial, Economic, Business, Entrepreneurial Literacy, Civic Literacy, Health Literacy, and Environmental Literacy.
+            </li>
+        </ul>
+        <ul className="list-disc pl-6 text-lg text-gray-700 space-y-6">
+            <li>
+                <strong className="font-semibold text-gray-800">Engage in research and development projects</strong> in Home Economics, Industrial Arts, Information Communication Technology, and Agri-Fishery, aligned with regional and national development goals.
+            </li>
+            <li>
+                <strong className="font-semibold text-gray-800">Apply a wide range of teaching process skills</strong>, including curriculum development, lesson planning, instructional material development, educational assessment, and teaching approaches.
+            </li>
+            <li>
+                <strong className="font-semibold text-gray-800">Apply professional knowledge and skills</strong> in teaching Home Economics, Industrial Arts, Information Communication Technology, and Agri-Fishery Arts with minimal supervision.
+            </li>
+            <li>
+                <strong className="font-semibold text-gray-800">Understand how educational processes</strong> relate to larger historical, social, cultural, and political contexts.
+            </li>
+        </ul>
+    </div>
+    <div className="mt-8 text-center px-4">
+        <p className="text-lg font-semibold text-gray-700">
+            This program ensures that graduates are equipped to meet the growing demands of the workforce and contribute meaningfully to their communities.
+        </p>
+    </div>
+</section>
+
 </div>
 
     );
