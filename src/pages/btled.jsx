@@ -24,20 +24,20 @@ const LivelihoodEducation = () => {
     };
     const HomeEconomicGroup = {
         "1st year" : [
-            "/HomeEconomic/HomeEconomic(1styr1stsem).png",
-            "/HomeEconomic/HomeEconomic(1styr2ndsem).png"
+            "/homeeconomic/HomeEconomic(1styr1stsem).png",
+            "/homeeconomic/HomeEconomic(1styr2ndsem).png"
         ],
         "2nd year" : [
-            "/HomeEconomic/HomeEconomic(2ndyr1stsem).png",
-            "/HomeEconomic/HomeEconomic(2ndyr2ndsem).png"
+            "/homeeconomic/HomeEconomic(2ndyr1stsem).png",
+            "/homeeconomic/HomeEconomic(2ndyr2ndsem).png"
         ],
         "3rd year" : [
-            "/HomeEconomic/HomeEconomic(3rdyr1stsem).png",
-            "/HomeEconomic/HomeEconomic(3rdyr2ndsem).png"
+            "/homeeconomic/HomeEconomic(3rdyr1stsem).png",
+            "/homeeconomic/HomeEconomic(3rdyr2ndsem).png"
         ],
         "4th year" : [
-            "/HomeEconomic/HomeEconomic(4thyr1stsem).png",
-            "/HomeEconomic/HomeEconomic(4thyr2ndsem).png"
+            "/homeeconomic/HomeEconomic(4thyr1stsem).png",
+            "/homeeconomic/HomeEconomic(4thyr2ndsem).png"
         ]
     };
 
