@@ -27,7 +27,6 @@ const Alumni = () => {
 
   return (
     <div>
-      {/* Banner Section */}
       <div className="bg-gradient-to-r from-blue-700 to-blue-500 py-8">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4 shadow-md">Alumni</h2>
@@ -35,7 +34,6 @@ const Alumni = () => {
         </div>
       </div>
 
-      {/* Alumni Directory */}
       <div className="container mx-auto px-6 py-8 mt-6">
         <div className="mb-6">
           <h3 className="text-2xl font-semibold text-center mb-4">Alumni Directory</h3>
@@ -50,7 +48,6 @@ const Alumni = () => {
           </ul>
         </div>
 
-        {/* Alumni Registration Form */}
         <div className='mb-20'>
           <h3 className="text-2xl font-semibold text-center mb-4">Alumni Registration</h3>
           <form onSubmit={handleSubmit} className="space-y-4 max-w-xl mx-auto">

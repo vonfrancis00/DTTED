@@ -25,7 +25,7 @@ const UniversityInformation = () => {
             </div>
           </div>
           <div className="bg-white max-w-7xl mx-auto p-8 rounded-lg shadow-xl mt-20">
-            {/* Vision Section */}
+            
             <section className="mb-12">
             <h2 className="text-3xl font-extrabold text-center text-blue-800 mb-4">Vision</h2>
             <p className="text-lg font-bold text-center text-gray-700 mb-4">
@@ -36,7 +36,7 @@ const UniversityInformation = () => {
             </section>
           </div>
           <div className="bg-white max-w-7xl mx-auto p-8 rounded-lg shadow-xl mt-10">
-            {/* Mission Section */}
+            
             <section className="mb-12">
             <h2 className="text-3xl font-extrabold text-center text-blue-800 mb-4">Mission</h2>
             <p className="text-xl font-bold text-gray-700 mb-4">
@@ -50,7 +50,7 @@ const UniversityInformation = () => {
             </section>
           </div>
           <div className="bg-white max-w-7xl mx-auto p-8 rounded-lg shadow-xl mt-10">
-            {/* Core Values Section */}
+            
             <section className="mb-12">
             <h2 className="text-3xl font-extrabold text-center text-blue-800 mb-4">USTP Core Values</h2>
             <p className="text-xl font-semibold text-gray-700 mb-4">

@@ -5,7 +5,6 @@ const Dtted = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-8 px-4">
         <div className="bg-white max-w-6xl mx-auto p-8 rounded-lg shadow-xl mt-20">
-        {/* Mission Section */}
         <section className="mb-12">
         <h2 className="text-3xl font-extrabold text-center text-blue-800 mb-4">Mission</h2>
         <p className="text-lg text-gray-700 mb-4">
@@ -16,7 +15,6 @@ const Dtted = () => {
         </section>
         </div>
         <div className="bg-white max-w-6xl mx-auto p-8 rounded-lg shadow-xl mt-10">
-        {/* Vision Section */}
         <section className="mb-12">
           <h2 className="text-3xl font-extrabold text-blue-800 text-center mb-4">Vision</h2>
           <p className="text-lg text-gray-700 mb-4">
@@ -27,7 +25,6 @@ const Dtted = () => {
         </section>
         </div>
         <div className="bg-white max-w-6xl mx-auto p-8 rounded-lg shadow-xl mt-10">
-        {/* Goals Section */}
         <section className="mb-12">
           <h2 className="text-3xl font-extrabold text-blue-800 text-center mb-4">Goals</h2>
           <ul className="list-disc pl-6 text-lg text-gray-700 space-y-4">
@@ -41,7 +38,6 @@ const Dtted = () => {
         </div>
         <div className="bg-white max-w-6xl mx-auto p-8 rounded-lg shadow-xl mt-10">
         <section className="mb-12">
-            {/* Objectives Section */}
           <h2 className="text-3xl font-extrabold text-blue-800 text-center mb-4">Objectives</h2>
           <ul className="list-disc pl-6 text-lg text-gray-700 space-y-4">
             <li>To prepare students for leadership roles in multinational organizations.</li>
@@ -57,7 +53,6 @@ const Dtted = () => {
           Course Offerings & Faculty
         </h1>
 
-        {/* Course Offerings Section */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-blue-800 mb-4">Course Offerings</h2>
           <p className="text-lg text-gray-700 mb-4">
@@ -97,7 +92,6 @@ const Dtted = () => {
           </ul>
         </section>
 
-        {/* Faculty Section */}
         <section>
           <h2 className="text-3xl text-center font-bold text-blue-800 mb-4">Meet Our Faculty</h2>
           <p className="text-lg text-gray-700 mb-4">
@@ -114,7 +108,6 @@ const Dtted = () => {
               />
               <h3 className="text-2xl text-center font-bold text-blue-800 mb-2">Grace Pimentel, PhD</h3>
               <p className="text-gray-700 text-center text-lg mb-2">CSTE DEAN</p>
-              {/* <p className="text-gray-500">Professor bio will be here.</p> */}
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
               <img
@@ -124,7 +117,6 @@ const Dtted = () => {
               />
               <h3 className="text-2xl text-center font-bold text-blue-800 mb-2">Aljun Sumud-ong, PhD</h3>
               <p className="text-gray-700 text-center text-lg mb-2">DTTED Chairman</p>
-              {/* <p className="text-gray-500">Professor bio will be here.</p> */}
             </div>
           </div>
         </section>

@@ -9,10 +9,9 @@ const Team = () => {
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Team Member 1 */}
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
             <img
-              src="https://via.placeholder.com/150"
+              src="/no-image(1).avif"
               alt="Team Member"
               className="w-32 h-32 rounded-full mx-auto mb-4"
             />
@@ -24,10 +23,9 @@ const Team = () => {
             </p>
           </div>
 
-          {/* Team Member 2 */}
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
             <img
-              src="https://via.placeholder.com/150"
+              src="/no-image(1).avif"
               alt="Team Member"
               className="w-32 h-32 rounded-full mx-auto mb-4"
             />
@@ -39,10 +37,9 @@ const Team = () => {
             </p>
           </div>
 
-          {/* Team Member 3 */}
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
             <img
-              src="https://via.placeholder.com/150"
+              src="/no-image(1).avif"
               alt="Team Member"
               className="w-32 h-32 rounded-full mx-auto mb-4"
             />
@@ -54,10 +51,9 @@ const Team = () => {
             </p>
           </div>
 
-          {/* Team Member 4 */}
           <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
             <img
-              src="https://via.placeholder.com/150"
+              src="/no-image(1).avif"
               alt="Team Member"
               className="w-32 h-32 rounded-full mx-auto mb-4"
             />

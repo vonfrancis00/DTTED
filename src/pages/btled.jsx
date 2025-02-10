@@ -41,10 +41,9 @@ const LivelihoodEducation = () => {
         ]
     };
 
-    // Scroll to top when the page loads
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, []);  // Empty dependency array ensures it runs only once when the component is mounted.
+    }, []);
 
     return (
         <div>

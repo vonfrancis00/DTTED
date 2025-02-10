@@ -31,9 +31,9 @@ const Footer = () => {
           <img 
             src="/ustp.png" 
             alt="Department Logo" 
-            className="max-w-[100px] h-auto mb-4" 
+            className="max-w-[150px] h-auto mb-4" 
           />
-          <div className="ml-10">
+          <div className="ml-10 mt-5">
             <button 
               onClick={() => toggleDropdown('about')} 
               className="text-white text-sm mb-2 font-semibold hover:underline"
@@ -108,7 +108,7 @@ const Footer = () => {
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
               <FaYoutube className="text-white hover:text-red-500 transition-colors" size={20} />
             </a>
-            <a href="/contactus">
+            <a href="/aboutus/contactinfo">
               <h4 className="text-gray-400 text-sm mr-10 hover:underline">Contact Us</h4>
             </a>
           </div>

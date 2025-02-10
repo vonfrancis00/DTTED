@@ -14,34 +14,29 @@ const Header = () => {
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
   const [isAlumniDropdownOpen, setIsAlumniDropdownOpen] = useState(false);
   
-  const headerRef = useRef(null); // Reference for the header
+  const headerRef = useRef(null);
 
-  // Toggle sidebar
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
     setIsAboutDropdownOpen(false);
     setIsAlumniDropdownOpen(false);
   };
 
-  // Toggle About dropdown
   const toggleAboutDropdown = () => {
     setIsAboutDropdownOpen(!isAboutDropdownOpen);
     setIsAlumniDropdownOpen(false);
   };
 
-  // Toggle Alumni dropdown
   const toggleAlumniDropdown = () => {
     setIsAlumniDropdownOpen(!isAlumniDropdownOpen);
     setIsAboutDropdownOpen(false);
   };
 
-  // Close dropdowns when a link is clicked
   const handleLinkClick = () => {
     setIsAboutDropdownOpen(false);
     setIsAlumniDropdownOpen(false);
   };
 
-  // Close dropdowns if clicking outside of the header
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (headerRef.current && !headerRef.current.contains(event.target)) {

@@ -4,7 +4,6 @@ const ContactUs = () => {
     return (
         <div className="max-w-6xl mx-auto my-0 md:my-32">
         <div className="grid md:grid-cols-2 gap-12 p-4">
-          {/* Contact Information */}
           <div className="space-y-6">
             <div>
               <h2 className="text-2xl font-semibold text-gray-900">Contact Us</h2>
@@ -15,7 +14,6 @@ const ContactUs = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
           <div className="bg-white p-6 shadow-md rounded-lg">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">Send Us a Message</h2>
             <form>
