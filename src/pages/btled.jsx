@@ -29,7 +29,7 @@ const LivelihoodEducation = () => {
         ],
         "2nd year" : [
             "/HomeEconomic/HomeEconomic(2ndyr1stsem).png",
-            "/HomeEconomic/HomeEconomic(2bdyr2ndsem).png"
+            "/HomeEconomic/HomeEconomic(2ndyr2ndsem).png"
         ],
         "3rd year" : [
             "/HomeEconomic/HomeEconomic(3rdyr1stsem).png",

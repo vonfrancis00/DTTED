@@ -4,19 +4,17 @@ import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
-  const [openDropdown, setOpenDropdown] = useState(null); // Track which dropdown is open
-  const footerRef = useRef(null); // Reference for the footer
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const footerRef = useRef(null);
 
-  // Toggle dropdown (About or Alumni)
   const toggleDropdown = (dropdown) => {
-    setOpenDropdown(openDropdown === dropdown ? null : dropdown); // Toggle the same dropdown or open the new one
+    setOpenDropdown(openDropdown === dropdown ? null : dropdown); 
   };
 
-  // Close dropdowns if clicking outside of the footer
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (footerRef.current && !footerRef.current.contains(event.target)) {
-        setOpenDropdown(null); // Close all dropdowns if clicked outside
+        setOpenDropdown(null);
       }
     };
 
