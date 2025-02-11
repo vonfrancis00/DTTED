@@ -53,7 +53,7 @@ const UniversityInformation = () => {
             
             <section className="mb-12">
             <h2 className="text-3xl font-extrabold text-center text-blue-800 mb-4">USTP Core Values</h2>
-            <p className="text-xl font-semibold text-gray-700 mb-4">
+            <p className="text-xl font-semibold text-gray-700 mb-5">
             Setting the right behavior and perspectives is fundamental in the fulfillment of one’s goals. Thus, the university agreed upon the following core values that would 
             guide its members and stakeholders in all their undertakings and move them on the right path:
             </p>

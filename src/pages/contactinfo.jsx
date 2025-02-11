@@ -17,7 +17,7 @@ const ContactInfo = () => {
               <strong>Email:</strong> test@ustp.edu
             </li>
             <li className="text-lg text-gray-700 mb-2">
-              <strong>Phone:</strong> +1 234 567 890
+              <strong>Phone:</strong> 088-856-4696
             </li>
             <li className="text-lg text-gray-700 mb-2">
               <strong>Address:</strong> Claro M. Recto Avenue, Lapasan 9000 Cagayan de Oro City Philippines
