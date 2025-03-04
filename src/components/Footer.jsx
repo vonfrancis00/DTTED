@@ -59,25 +59,6 @@ const Footer = () => {
             <a href="/activities">
               <h2 className="text-white text-sm mb-2 font-semibold hover:underline">Activities</h2>
             </a>
-            <button 
-              onClick={() => toggleDropdown('alumni')} 
-              className="text-white text-sm mb-2 font-semibold hover:underline"
-            >
-              Alumni
-            </button>
-            {openDropdown === 'alumni' && (
-              <ul className="text-white text-sm ml-6 space-y-2 mb-5">
-                <li>
-                  <a href="/alumni/graduate" className="hover:underline">Graduates Announcement for DTTED</a>
-                </li>
-                <li>
-                  <a href="/alumni/joboffer" className="hover:underline">Job Offers</a>
-                </li>
-                <li>
-                  <a href="/alumni/seminar" className="hover:underline">Seminars</a>
-                </li>
-              </ul>
-            )}
             <a href="/announcements">
               <h3 className="text-white text-sm mb-2 font-semibold hover:underline">Announcement</h3>
             </a>

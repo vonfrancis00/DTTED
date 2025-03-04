@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import Alumni from './pages/alumni';
+// import Alumni from './pages/alumni';
 import AboutUs from './components/AboutUs';
 import Announcements from './pages/announcement';
 import Activities from './pages/activities';
@@ -23,7 +23,7 @@ function App() {
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/alumni" element={<Alumni />} />
+          {/* <Route path="/alumni" element={<Alumni />} /> */}
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/announcements" element={<Announcements />} />

@@ -4,7 +4,6 @@ import {
   FaBars,
   FaTimes,
   FaInfoCircle,
-  FaUserGraduate,
   FaClipboardList,
   FaBullhorn,
 } from "react-icons/fa";
@@ -12,36 +11,26 @@ import {
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
-  const [isAlumniDropdownOpen, setIsAlumniDropdownOpen] = useState(false);
   
   const headerRef = useRef(null);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
     setIsAboutDropdownOpen(false);
-    setIsAlumniDropdownOpen(false);
   };
 
   const toggleAboutDropdown = () => {
     setIsAboutDropdownOpen(!isAboutDropdownOpen);
-    setIsAlumniDropdownOpen(false);
-  };
-
-  const toggleAlumniDropdown = () => {
-    setIsAlumniDropdownOpen(!isAlumniDropdownOpen);
-    setIsAboutDropdownOpen(false);
   };
 
   const handleLinkClick = () => {
     setIsAboutDropdownOpen(false);
-    setIsAlumniDropdownOpen(false);
   };
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (headerRef.current && !headerRef.current.contains(event.target)) {
         setIsAboutDropdownOpen(false);
-        setIsAlumniDropdownOpen(false);
       }
     };
 
@@ -115,45 +104,6 @@ const Header = () => {
                     className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
                   >
                     Contact Information
-                  </Link>
-                </li>
-              </ul>
-            )}
-          </li>
-          <li className="relative">
-            <button
-              onClick={toggleAlumniDropdown}
-              className="hover:underline font-semibold flex items-center gap-2"
-            >
-              <FaUserGraduate /> Alumni
-            </button>
-            {isAlumniDropdownOpen && (
-              <ul className="absolute left-0 mt-2 w-48 bg-white shadow-xl rounded-lg overflow-hidden z-50 transition-all duration-300 ease-out">
-                <li>
-                  <Link
-                    to="/alumni/graduate"
-                    onClick={handleLinkClick}
-                    className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
-                  >
-                    Graduates Announcement for DTTED
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/alumni/joboffer"
-                    onClick={handleLinkClick}
-                    className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
-                  >
-                    Job Offers
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/alumni/seminar"
-                    onClick={handleLinkClick}
-                    className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
-                  >
-                    Seminars
                   </Link>
                 </li>
               </ul>

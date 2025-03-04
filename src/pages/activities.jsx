@@ -1,77 +1,81 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import ModalActivities from './modalactivities';
 
 const Activities = () => {
-  const [activities, setActivities] = useState([
-    { title: "Annual Tech Conference", description: "A conference on the latest trends in technology.", date: "2024-04-20" },
-    { title: "Workshop on Data Science", description: "A hands-on workshop to learn data science basics.", date: "2024-05-10" },
-  ]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedActivity, setSelectedActivity] = useState(null);
 
-  const [newActivity, setNewActivity] = useState({
-    title: "",
-    description: "",
-    date: "",
-  });
+  const activities = [
+    { 
+      title: "Application for Graduation for 2nd Semester", 
+      description: "Ensure you submit all required documents and meet the deadlines.",
+      image: "/activities(1).jpg",
+    },
+    { 
+      title: "Date of the Application", 
+      description: "Application period starts from March 4th to March 28th. Don't miss it!",
+      image: "/activities(2).jpg",
+    }
+  ];
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setNewActivity((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
+  const handleOpenModal = (activity) => {
+    setSelectedActivity(activity);
+    setIsModalOpen(true);
+  };
+  
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedActivity(null);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setActivities([...activities, newActivity]);
-    setNewActivity({ title: "", description: "", date: "" });
-  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
-    <div className="container mx-auto px-6 py-8 mt-20 mb-20">
-      <h2 className="text-3xl font-bold text-center mb-6">Monthly Activities</h2>
-
-      <div className="mb-6">
-        <h3 className="text-2xl font-semibold text-center mb-4">Upcoming Activities</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
-          {activities.map((activity, index) => (
-            <div key={index} className="bg-white p-4 shadow-md rounded-lg bg-yellow-400">
-              <h4 className="font-semibold text-xl text-blue-800">{activity.title}</h4>
-              <p className="text-gray-600 text-black">{activity.description}</p>
-              <p className="text-gray-500 mt-2">{new Date(activity.date).toLocaleDateString()}</p>
+    <div className="container mx-auto px-6 py-12 mt-20 mb-20">
+      <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-8 uppercase tracking-wide">
+        Activities
+      </h2>
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {activities.map((activity, index) => (
+          <div 
+            key={index} 
+            className="bg-white shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl"
+          >
+            <img 
+              src={activity.image} 
+              alt={activity.title} 
+              className="w-full h-56 object-cover"
+            />
+            <div className="p-6">
+              <h4 className="text-2xl text-blue-900 font-bold mb-2">
+                {activity.title}
+              </h4>
+              <p className="text-gray-600 text-lg mb-4">
+                {activity.description.length > 100 ? `${activity.description.substring(0, 100)}...` : activity.description}
+              </p>
+              <button 
+                onClick={() => handleOpenModal(activity)} 
+                className="w-full bg-blue-600 text-white py-2 px-4 rounded-md font-medium text-lg hover:bg-blue-700 transition-all"
+              >
+                Read More
+              </button>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
 
-      <div>
-        <h3 className="text-2xl font-semibold text-center mb-4">Add New Activity</h3>
-        <form onSubmit={handleSubmit} className="space-y-4 max-w-xl mx-auto">
-          <input
-            type="text"
-            name="title"
-            value={newActivity.title}
-            onChange={handleChange}
-            placeholder="Activity Title"
-            className="border p-2 w-full rounded-md"
-          />
-          <textarea
-            name="description"
-            value={newActivity.description}
-            onChange={handleChange}
-            placeholder="Activity Description"
-            className="border p-2 w-full rounded-md"
-            rows="4"
-          />
-          <input
-            type="date"
-            name="date"
-            value={newActivity.date}
-            onChange={handleChange}
-            className="border p-2 w-full rounded-md"
-          />
-          <button type="submit" className="bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700 w-full">Submit Activity</button>
-        </form>
-      </div>
+      {selectedActivity && (
+        <ModalActivities 
+          isOpen={isModalOpen} 
+          onClose={handleCloseModal}
+          title={selectedActivity.title}
+          description={selectedActivity.description}
+          image={selectedActivity.image}
+        />
+      )}
     </div>
   );
 };
