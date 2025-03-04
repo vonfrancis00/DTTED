@@ -1,30 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Dtted = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="min-h-screen bg-gray-100 py-8 px-4">
         <div className="bg-white max-w-6xl mx-auto p-8 rounded-lg shadow-xl mt-20">
-        <section className="mb-12">
-        <h2 className="text-3xl font-extrabold text-center text-blue-800 mb-4">Mission</h2>
-        <p className="text-lg text-gray-700 mb-4">
-            Our mission is to deliver world-class education in global management through
-            innovative teaching, research, and a curriculum that equips students with the skills
-            needed to lead and make a positive impact in the global business landscape.
-        </p>
-        </section>
-        </div>
-        <div className="bg-white max-w-6xl mx-auto p-8 rounded-lg shadow-xl mt-10">
-        <section className="mb-12">
-          <h2 className="text-3xl font-extrabold text-blue-800 text-center mb-4">Vision</h2>
-          <p className="text-lg text-gray-700 mb-4">
-            Our vision is to be a global leader in management education, fostering innovation and
-            excellence in the next generation of global business leaders, who will drive sustainable
-            and ethical business practices across the world.
-          </p>
-        </section>
-        </div>
-        <div className="bg-white max-w-6xl mx-auto p-8 rounded-lg shadow-xl mt-10">
         <section className="mb-12">
           <h2 className="text-3xl font-extrabold text-blue-800 text-center mb-4">Goals</h2>
           <ul className="list-disc pl-6 text-lg text-gray-700 space-y-4">
@@ -118,7 +100,36 @@ const Dtted = () => {
               <h3 className="text-2xl text-center font-bold text-blue-800 mb-2">Aljun Sumud-ong, PhD</h3>
               <p className="text-gray-700 text-center text-lg mb-2">DTTED Chairman</p>
             </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-110 cursor-pointer" onClick={() => setIsOpen(true)}>
+          <img src="/FACULTY.JPG" alt="Faculty Members" className="w-34 h-32 mx-auto mb-4" />
+          <h3 className="text-2xl text-center font-bold text-blue-800 mb-2">FACULTY MEMBERS</h3>
+        </div>
           </div>
+
+          {/* Modal Popup */}
+          {isOpen && (
+          <div className="fixed inset-0 bg-black bg-opacity-60 flex items-start justify-center p-4 mt-10">
+            <div className="bg-white p-6 rounded-2xl shadow-2xl relative max-w-2xl w-full max-h-[90vh] overflow-y-auto mt-5 mb-5">
+              <button
+                className="absolute top-4 right-4 text-2xl font-bold text-gray-600 hover:text-gray-900 focus:outline-none"
+                onClick={() => setIsOpen(false)}
+              >
+                &times;
+              </button>
+              <div className="flex flex-col items-center">
+                <h3 className="text-3xl font-bold text-blue-800 mb-6">Faculty Members</h3>
+                <img 
+                  src="/FACULTY.JPG" 
+                  alt="Popup" 
+                  className="w-full max-w-xl rounded-lg shadow-lg"
+                />
+                <p className="text-gray-700 mt-6 text-lg text-center">
+                  Explore our esteemed faculty members who bring a wealth of knowledge and expertise.
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
         </section>
       </div>
     </div>
