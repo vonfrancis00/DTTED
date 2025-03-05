@@ -2,54 +2,44 @@ import React from "react";
 
 const ContactInfo = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center py-8 px-4 mt-5">
-      <div className="bg-white w-full max-w-2xl p-8 rounded-lg shadow-lg mt-10">
-        <h1 className="text-4xl font-extrabold text-center text-blue-800 mb-6">Contact Information</h1>
-        
-        <p className="text-lg text-gray-700 mb-4">
-          If you have any questions or would like more information, feel free to reach out to us!
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center py-12 px-6">
+      <div className="bg-white w-full max-w-3xl p-10 rounded-lg shadow-2xl mt-5">
+        <h1 className="text-5xl font-extrabold text-center text-blue-900 mb-8 uppercase tracking-wide">
+          Contact Us
+        </h1>
+
+        <p className="text-lg text-gray-700 text-center mb-6">
+          Have any questions? Feel free to reach out to us!
         </p>
 
-        <div className="mb-6">
-          <h2 className="text-2xl font-bold text-blue-800 mb-2">Our Contact Details:</h2>
-          <ul className="list-none">
-            <li className="text-lg text-gray-700 mb-2">
-              <strong>Email:</strong> test@ustp.edu
+        {/* Contact Details Section */}
+        <div>
+          <h2 className="text-2xl font-bold text-blue-900 mb-4">Get in Touch</h2>
+          <ul className="space-y-4">
+            <li className="text-lg text-gray-700">
+              <strong>Email:</strong>{" "}
+              <a
+                href="mailto:dtted@ustp.edu.ph"
+                className="text-blue-600 hover:underline"
+              >
+                dtted@ustp.edu.ph
+              </a>
             </li>
-            <li className="text-lg text-gray-700 mb-2">
-              <strong>Phone:</strong> 088-856-4696
+            <li className="text-lg text-gray-700">
+              <strong>Telephone:</strong> 000-1194
             </li>
-            <li className="text-lg text-gray-700 mb-2">
-              <strong>Address:</strong> Claro M. Recto Avenue, Lapasan 9000 Cagayan de Oro City Philippines
+            <li className="text-lg text-gray-700">
+              <strong>Facebook Page:</strong>{" "}
+              <a
+                href="https://web.facebook.com/profile.php?id=100072248011408"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                USTP Department of Technical and Technology Education
+              </a>
             </li>
           </ul>
-        </div>
-
-        <div>
-          <h2 className="text-2xl font-bold text-blue-800 mb-4">Send us a message:</h2>
-          <form className="flex flex-col space-y-4">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-            />
-            <textarea
-              placeholder="Your Message"
-              rows="4"
-              className="px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-            />
-            <button
-              type="submit"
-              className="py-2 px-6 rounded-md bg-yellow-400 text-blue-800 font-semibold hover:bg-yellow-500 transition-colors duration-200"
-            >
-              Send Message
-            </button>
-          </form>
         </div>
       </div>
     </div>

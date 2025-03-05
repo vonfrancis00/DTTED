@@ -14,6 +14,7 @@ import DTTED from "./pages/dtted";
 import Team from "./pages/team";
 import DTVTED from "./pages/btvted";
 import DTLED from "./pages/btled";
+import News from "./pages/news";
 
 function App() {
   return (
@@ -28,9 +29,10 @@ function App() {
           <Route path="/activities" element={<Activities />} />
           <Route path="/announcements" element={<Announcements />} />
           <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/aboutus/universityinfo" element={<UniversityInformation />} />
+          <Route path="/University/universityinfo" element={<UniversityInformation />} />
           <Route path="/aboutus/contactinfo" element={<ContactInfo />} />
-          <Route path="/aboutus/dtted" element={<DTTED />} />
+          <Route path="/Department/dtted" element={<DTTED />} />
+          <Route path="/aboutus/facultynews" element={<News />} />
           <Route path="/aboutus/team" element={<Team />} />
           <Route path="/dtvted" element={<DTVTED />} />
           <Route path="/dtled" element={<DTLED />} />

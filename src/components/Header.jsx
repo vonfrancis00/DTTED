@@ -69,10 +69,10 @@ const Header = () => {
               <FaInfoCircle /> About
             </button>
             {isAboutDropdownOpen && (
-              <ul className="absolute left-0 mt-2 w-48 bg-white shadow-xl rounded-lg overflow-hidden z-50 transition-all duration-300 ease-out">
+              <ul className="absolute left-0 mt-2 w-56 bg-white shadow-xl rounded-lg overflow-hidden z-50 transition-all duration-300 ease-out">
                 <li>
                   <Link
-                    to="/aboutus/universityinfo"
+                    to="/University/universityinfo"
                     onClick={handleLinkClick}
                     className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
                   >
@@ -81,11 +81,20 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to="/aboutus/dtted"
+                    to="/Department/dtted"
                     onClick={handleLinkClick}
                     className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
                   >
                     Department of Technical & Technology Education
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/aboutus/facultynews"
+                    onClick={handleLinkClick}
+                    className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
+                  >
+                    Faculty & Staff News
                   </Link>
                 </li>
                 <li>

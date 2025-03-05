@@ -2,9 +2,9 @@ import React from "react";
 
 const Team = () => {
   const teamMembers = [
-    { name: "Guen Idjao", image: "/guen.jfif" },
+    { name: "Guen Idjao", image: "/IDJAOGUEN(2).png" },
     { name: "Lugine Mae Mira", image: "/lugi.jfif" },
-    { name: "Kimberly Ann Radaza", image: "/kim.jfif" },
+    { name: "Kimberly Ann Radaza", image: "/RADAZAKIM(2).png" },
   ];
 
   return (
@@ -23,7 +23,7 @@ const Team = () => {
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-blue-200 object-cover"
+                className="w-48 h-48 rounded-full mx-auto mb-6 border-4 border-blue-200 object-cover"
               />
               <h3 className="text-2xl font-bold text-blue-900">{member.name}</h3>
               <p className="text-gray-600 text-lg mt-2">Team Member</p>
