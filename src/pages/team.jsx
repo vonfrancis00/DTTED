@@ -3,7 +3,7 @@ import React from "react";
 const Team = () => {
   const teamMembers = [
     { name: "Guen Idjao", image: "/IDJAOGUEN(2).png" },
-    { name: "Lugine Mae Mira", image: "/lugi.jfif" },
+    { name: "Lugine Mae Mira", image: "/no-image(1).avif" },
     { name: "Kimberly Ann Radaza", image: "/RADAZAKIM(2).png" },
   ];
 

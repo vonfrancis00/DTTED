@@ -43,10 +43,13 @@ const Footer = () => {
             {openDropdown === 'about' && (
               <ul className="text-white text-sm ml-6 space-y-2 mb-5">
                 <li>
-                  <a href="/aboutus/universityinfo" className="hover:underline">University Information</a>
+                  <a href="/University/universityinfo" className="hover:underline">University Information</a>
                 </li>
                 <li>
-                  <a href="/aboutus/dtted" className="hover:underline">Department of Technical & Technology Education</a>
+                  <a href="/Department/dtted" className="hover:underline">Department of Technical & Technology Education</a>
+                </li>
+                <li>
+                  <a href="/aboutus/facultynews" className="hover:underline">Faculty & Staff News</a>
                 </li>
                 <li>
                   <a href="/aboutus/team" className="hover:underline">Our Team</a>

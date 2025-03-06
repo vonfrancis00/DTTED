@@ -18,7 +18,7 @@ const News = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex justify-center items-center p-6">
-      <div className="bg-white max-w-4xl mx-auto p-10 rounded-2xl shadow-xl text-center">
+      <div className="bg-white max-w-4xl mx-auto p-10 rounded-2xl shadow-xl text-center mt-20">
         <h1 className="text-4xl font-bold text-blue-900 mb-6 uppercase tracking-wide">
           Latest News
         </h1>
