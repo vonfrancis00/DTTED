@@ -25,7 +25,7 @@ const News = () => {
 
         <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
           <p className="text-3xl md:text-4xl font-extrabold mb-8 tracking-wide text-blue-900 shadow-sm">
-            ICMR: International Conference on Multidisciplinary Research 2024
+            ICMR: International Conference on Multidisciplinary Research 2024sdsd
           </p>
           
           {/* Display Two Large Images */}
