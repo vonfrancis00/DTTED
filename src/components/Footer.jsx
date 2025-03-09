@@ -8,7 +8,7 @@ const Footer = () => {
   const footerRef = useRef(null);
 
   const toggleDropdown = (dropdown) => {
-    setOpenDropdown(openDropdown === dropdown ? null : dropdown); 
+    setOpenDropdown(openDropdown === dropdown ? null : dropdown);
   };
 
   useEffect(() => {
@@ -26,14 +26,14 @@ const Footer = () => {
 
   return (
     <footer ref={footerRef} className="bg-blue-800 text-white p-5">
-      <div className="flex justify-between items-start mb-5">
-        <div className="flex items-start">
+      <div className="flex flex-col md:flex-row justify-between items-start mb-5">
+        <div className="flex flex-col md:flex-row items-start mb-5 md:mb-0">
           <img 
             src="/ustp.png" 
             alt="Department Logo" 
-            className="max-w-[150px] h-auto mb-4" 
+            className="max-w-[150px] h-auto mb-4 md:mb-0" 
           />
-          <div className="ml-10 mt-5">
+          <div className="ml-0 md:ml-10 mt-5">
             <button 
               onClick={() => toggleDropdown('about')} 
               className="text-white text-sm mb-2 font-semibold hover:underline"
@@ -68,7 +68,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-right">
+        <div className="text-right md:text-left">
           <div className="mb-3 text-left">
             <h1 className="flex items-center mb-1">
               <FaLocationDot className="mr-2" /> Claro M. Recto Avenue, Lapasan
@@ -79,7 +79,7 @@ const Footer = () => {
             </h3>
           </div>
 
-          <div className="flex space-x-2 mt-4 text-left">
+          <div className="flex space-x-4 mt-4 justify-center md:justify-start text-left">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebookF className="text-white hover:text-blue-500 transition-colors" size={20} />
             </a>

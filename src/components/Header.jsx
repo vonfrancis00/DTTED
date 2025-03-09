@@ -16,7 +16,7 @@ const Header = () => {
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
-    setIsAboutDropdownOpen(false);
+    setIsAboutDropdownOpen(false); // Close the About dropdown when sidebar is toggled
   };
 
   const toggleAboutDropdown = () => {
@@ -25,6 +25,7 @@ const Header = () => {
 
   const handleLinkClick = () => {
     setIsAboutDropdownOpen(false);
+    setIsSidebarOpen(false); // Close sidebar when a link is clicked
   };
 
   useEffect(() => {
@@ -45,7 +46,7 @@ const Header = () => {
       ref={headerRef}
       className="bg-yellow-400 text-blue-800 px-8 py-2 flex flex-row items-center fixed top-0 left-0 w-full z-50"
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center w-full">
         <div className="bg-white rounded-md min-h-[60px] min-w-[60px] max-h-[60px] max-w-[60px] p-1">
           <Link to="/" onClick={handleLinkClick}>
             <img src="/ustp.png" alt="Ustp Logo" />
