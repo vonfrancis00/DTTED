@@ -15,7 +15,18 @@ const Activities = () => {
       title: "𝙅𝙤𝙞𝙣 𝙪𝙨 𝙞𝙣 𝙖 𝙢𝙤𝙢𝙚𝙣𝙩𝙤𝙪𝙨 𝙟𝙤𝙪𝙧𝙣𝙚𝙮!", 
       description: "The time has come to witness a remarkable chapter in the lives of our dear pre-service educators as they embark on their 𝐏𝐢𝐧𝐧𝐢𝐧𝐠 𝐂𝐞𝐫𝐞𝐦𝐨𝐧𝐲 2025 With the theme, 𝙁𝙧𝙤𝙢 𝙑𝙞𝙨𝙞𝙤𝙣 𝙩𝙤 𝙍𝙚𝙖𝙡𝙞𝙩𝙮: 𝙄𝙣𝙣𝙤𝙫𝙖𝙩𝙞𝙣𝙜 𝙩𝙝𝙚 𝙁𝙪𝙩𝙪𝙧𝙚 𝙤𝙛 𝙀𝙙𝙪𝙘𝙖𝙩𝙞𝙤𝙣, we draw inspiration from the guiding star, a beacon of light that leads us through challenges and into a future brimming with possibilities.",
       image: "/pinning.jpeg",
+    },
+    { 
+      title: "Schedule of Examination for March!", 
+      description: "Here you will find the detailed schedule of upcoming examinations. Make sure to check the date and time of each subject's exam.",
+      image: "/29.png",
+    },
+    { 
+      title: "Schedule of Examination for April!", 
+      description: "Here you will find the detailed schedule of upcoming examinations. Make sure to check the date and time of each subject's exam.",
+      image: "/30.png",
     }
+
   ];
 
   const handleOpenModal = (activity) => {

@@ -49,10 +49,10 @@ const Footer = () => {
                   <a href="/Department/dtted" className="hover:underline">Department of Technical & Technology Education</a>
                 </li>
                 <li>
-                  <a href="/aboutus/facultynews" className="hover:underline">Faculty & Staff News</a>
+                  <a href="/News/facultynews" className="hover:underline">Faculty & Staff News</a>
                 </li>
                 <li>
-                  <a href="/aboutus/team" className="hover:underline">Our Team</a>
+                  <a href="/Team/ourteam" className="hover:underline">Our Team</a>
                 </li>
                 <li>
                   <a href="/aboutus/contactinfo" className="hover:underline">Contact Information</a>

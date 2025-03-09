@@ -18,10 +18,12 @@ const ContactInfo = () => {
           <h2 className="text-2xl font-bold text-blue-900 mb-4">Get in Touch</h2>
           <ul className="space-y-4">
             <li className="text-lg text-gray-700 flex items-center">
-              <FaEnvelope className="text-blue-600 mr-3" /> 
+              <FaEnvelope className="text-blue-600 mr-3" />
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:dtted@ustp.edu.ph"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=dtted@ustp.edu.ph&su=Inquiry"
+                target="_blank" // Opens in a new tab
+                rel="noopener noreferrer"
                 className="text-blue-600 hover:underline ml-3"
               >
                 dtted@ustp.edu.ph

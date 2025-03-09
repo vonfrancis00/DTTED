@@ -52,7 +52,6 @@ const Announcements = () => {
       <h2 className="text-4xl font-extrabold text-center text-blue-900 mb-6">ANNOUNCEMENTS</h2>
       
       <div className="mb-6">
-        <h3 className="text-3xl font-semibold text-center text-blue-800 mb-4">Latest Announcements</h3>
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {announcements.map((announcement, index) => (
             <li key={index} className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-xl flex flex-col h-full">

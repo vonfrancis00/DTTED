@@ -91,7 +91,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to="/aboutus/facultynews"
+                    to="/News/facultynews"
                     onClick={handleLinkClick}
                     className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
                   >
@@ -100,7 +100,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to="/aboutus/team"
+                    to="/Team/ourteam"
                     onClick={handleLinkClick}
                     className="block px-6 py-3 text-gray-800 font-semibold hover:bg-blue-300 hover:text-blue-800 transition-colors duration-200"
                   >

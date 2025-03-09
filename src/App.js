@@ -3,11 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
-// import Alumni from './pages/alumni';
-import AboutUs from './components/AboutUs';
 import Announcements from './pages/announcement';
 import Activities from './pages/activities';
-import ContactUs from './components/ContactUs';
 import UniversityInformation from "./pages/universityinfo";
 import ContactInfo from "./pages/contactinfo";
 import DTTED from "./pages/dtted";
@@ -24,16 +21,13 @@ function App() {
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/alumni" element={<Alumni />} /> */}
-          <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/announcements" element={<Announcements />} />
-          <Route path="/contactus" element={<ContactUs />} />
           <Route path="/University/universityinfo" element={<UniversityInformation />} />
           <Route path="/aboutus/contactinfo" element={<ContactInfo />} />
           <Route path="/Department/dtted" element={<DTTED />} />
-          <Route path="/aboutus/facultynews" element={<News />} />
-          <Route path="/aboutus/team" element={<Team />} />
+          <Route path="/News/facultynews" element={<News />} />
+          <Route path="/Team/ourteam" element={<Team />} />
           <Route path="/dtvted" element={<DTVTED />} />
           <Route path="/dtled" element={<DTLED />} />
 
