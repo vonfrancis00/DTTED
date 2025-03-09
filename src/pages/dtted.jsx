@@ -115,7 +115,7 @@ const Dtted = () => {
             {/* DTTED Chairman */}
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col items-center" onClick={() => openModal('dttedChairman')}>
               <img
-                src="/no-image(1).avif"
+                src="/chair.jpg"
                 alt="DTTED Chairman"
                 className="w-48 h-48 rounded-full mb-4 object-cover"
               />
@@ -170,7 +170,7 @@ const Dtted = () => {
                 <div className="flex flex-col items-center">
                   <h3 className="text-4xl font-bold text-blue-900 mb-6">Aljun Sumud-ong, PhD</h3>
                   <img 
-                    src="/no-image(1).avif" 
+                    src="/chair.jpg" 
                     alt="DTTED Chairman" 
                     className="w-full max-w-xl rounded-lg shadow-xl transform transition-transform duration-300 hover:scale-105 mb-6"
                   />
