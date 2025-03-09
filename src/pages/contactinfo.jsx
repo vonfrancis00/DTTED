@@ -1,4 +1,5 @@
 import React from "react";
+import { FaEnvelope, FaPhoneAlt, FaFacebook } from "react-icons/fa";
 
 const ContactInfo = () => {
   return (
@@ -16,27 +17,30 @@ const ContactInfo = () => {
         <div>
           <h2 className="text-2xl font-bold text-blue-900 mb-4">Get in Touch</h2>
           <ul className="space-y-4">
-            <li className="text-lg text-gray-700">
+            <li className="text-lg text-gray-700 flex items-center">
+              <FaEnvelope className="text-blue-600 mr-3" /> 
               <strong>Email:</strong>{" "}
               <a
                 href="mailto:dtted@ustp.edu.ph"
-                className="text-blue-600 hover:underline"
+                className="text-blue-600 hover:underline ml-3"
               >
                 dtted@ustp.edu.ph
               </a>
             </li>
-            <li className="text-lg text-gray-700">
-              <strong>Telephone:</strong> 000-1194
+            <li className="text-lg text-gray-700 flex items-center">
+              <FaPhoneAlt className="text-blue-600 mr-3" />
+              <strong className="mr-2">Telephone:</strong> 000-1194
             </li>
-            <li className="text-lg text-gray-700">
-              <strong>Facebook Page:</strong>{" "}
+            <li className="text-lg text-gray-700 flex items-center">
+              <FaFacebook className="text-blue-600 mr-3" />
+              <strong>Facebook Page: </strong>
               <a
                 href="https://web.facebook.com/profile.php?id=100072248011408"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="text-blue-600 hover:underline ml-3"
               >
-                USTP Department of Technical and Technology Education
+                 USTP Department of Technical and Technology Education
               </a>
             </li>
           </ul>

@@ -43,35 +43,37 @@ const Dtted = () => {
             the key courses:
           </p>
           <ul className="gap-8">
-            <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-10">
+            <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 mb-10 transform hover:scale-105 hover:translate-y-2">
               <Link to="/dtled">
-              <h3 className="text-2xl font-bold text-center hover:underline text-blue-800 mb-2">Bachelor of Technology and Livelihood Education (BTLED)</h3>
+                <h3 className="text-2xl font-bold text-center hover:underline text-blue-800 mb-2">Bachelor of Technology and Livelihood Education (BTLED)</h3>
               </Link>
               <p className="text-gray-700 text-xl">
-              The Bachelor of Technology and Livelihood Education (BTLED) program is design to equip future teachers who will be teaching the Technology and Livelihood Education 
-              subjects for Grades 4 to 8 in the basic education. Specifically, the BTLEd program is expected to produce teachers who can assume the following major roles:<b/>  
+                The Bachelor of Technology and Livelihood Education (BTLED) program is designed to equip future teachers who will be teaching the Technology and Livelihood Education 
+                subjects for Grades 4 to 8 in the basic education. Specifically, the BTLEd program is expected to produce teachers who can assume the following major roles:
               </p>
               <ul className="list-disc pl-6 text-gray-700 text-xl">
                 <li>Effective synthesizers of organized knowledge to allow analytical and critical thinking skills.</li>
                 <li>Efficient and effective promoters and facilitators of learning to enable the learners to develop to the fullest their potential for a continuing pursuit of lifelong learning in technology and livelihood education.</li>
                 <li>Committed humanists whose clear understanding and appreciation of human ideals and values inspire learners to realize their potential.</li>
-                <li> Model teachers with competence to teach the TLE exploratory courses from Grades 4-8.</li>
-                <li> With high regard for learning imbued with proper work attitude and values as practiced in industry.</li>
-                <li> Nationally-certified trainers in their fields of specialization.</li>
+                <li>Model teachers with competence to teach the TLE exploratory courses from Grades 4-8.</li>
+                <li>With high regard for learning imbued with proper work attitude and values as practiced in industry.</li>
+                <li>Nationally-certified trainers in their fields of specialization.</li>
               </ul>
             </li>
-            <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mb-20">
+            
+            <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 mb-20 transform hover:scale-105 hover:translate-y-2">
               <Link to="/dtvted">
                 <h3 className="text-2xl font-bold hover:underline text-center text-blue-800 mb-2">Bachelor in Technical-Vocational Teacher Education (BTVTEd)</h3>
               </Link>
               <p className="text-gray-700 text-xl">
-              The Bachelor in Technical-Vocational Teacher Education (BTVTEd) is a four-year program designed to prepare future teachers in Technical and Vocational Education and Training (TVET) 
-              for roles in TLE, Senior High School, and TVET institutions. It equips students with the knowledge, skills, attitudes, and values necessary for effective teaching. 
-              BTVTEd graduates meet TESDA’s Trainer’s Methodology requirement and are exempt from the TM assessment after passing the licensure exam. The program also aims to develop teachers 
-              who can contribute to community development with competence and human values.
+                The Bachelor in Technical-Vocational Teacher Education (BTVTEd) is a four-year program designed to prepare future teachers in Technical and Vocational Education and Training (TVET) 
+                for roles in TLE, Senior High School, and TVET institutions. It equips students with the knowledge, skills, attitudes, and values necessary for effective teaching. 
+                BTVTEd graduates meet TESDA’s Trainer’s Methodology requirement and are exempt from the TM assessment after passing the licensure exam. The program also aims to develop teachers 
+                who can contribute to community development with competence and human values.
               </p>
             </li>
           </ul>
+
         </section>
 
         <section>
@@ -81,26 +83,27 @@ const Dtted = () => {
             Meet some of our esteemed professors:
           </p>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <img
                 src="/no-image(1).avif"
                 alt="Faculty Member"
-                className="w-32 h-32 rounded-full mx-auto mb-4"
+                className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
               />
               <h3 className="text-2xl text-center font-bold text-blue-800 mb-2">Grace Pimentel, PhD</h3>
               <p className="text-gray-700 text-center text-lg mb-2">CSTE DEAN</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+
+            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <img
                 src="/no-image(1).avif"
                 alt="Faculty Member"
-                className="w-32 h-32 rounded-full mx-auto mb-4"
+                className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
               />
               <h3 className="text-2xl text-center font-bold text-blue-800 mb-2">Aljun Sumud-ong, PhD</h3>
               <p className="text-gray-700 text-center text-lg mb-2">DTTED Chairman</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-110 cursor-pointer" onClick={() => setIsOpen(true)}>
+          <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-110 cursor-pointer" onClick={() => setIsOpen(true)}>
           <img src="/FACULTY.JPG" alt="Faculty Members" className="w-34 h-32 mx-auto mb-4" />
           <h3 className="text-2xl text-center font-bold text-blue-800 mb-2">FACULTY MEMBERS</h3>
         </div>
