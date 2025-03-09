@@ -20,15 +20,15 @@ const Home = () => {
             className="h-56 w-56 md:h-64 md:w-64 mb-6 mt-5" 
           />
 
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-4xl font-extrabold text-white mb-4">
             Department of Technical and Technology Education</h2>
 
             <div className="bg-white bg-opacity-70 p-6 rounded-xl shadow-lg max-w-4xl mx-auto mt-16">
-            <h3 className="text-2xl font-semibold text-center text-gray-800 mb-2">
-              Department Event Coming Up!
+            <h3 className="text-2xl font-bold text-center text-gray-800 mb-2">
+              Department Events Coming Up!
             </h3>
             <p className="text-gray-700">
-              Join us for the annual seminar on "Future of Education". Stay tuned for more details!
+              Stay tuned for Updates!
             </p>
           </div>
 
@@ -38,7 +38,7 @@ const Home = () => {
               className="bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 flex items-center gap-2"
             >
               <MdCalendarMonth size={20} />
-              Monthly Activities
+              Activities & Events
             </Link>
             <Link
               to="/announcements"
