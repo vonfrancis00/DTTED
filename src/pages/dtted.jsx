@@ -59,7 +59,7 @@ const Dtted = () => {
       <div className="bg-white max-w-6xl mx-auto p-8 rounded-lg shadow-xl mt-20">
         <h1 className="text-4xl font-extrabold text-center text-blue-800 mb-6">Course Offerings & Faculty</h1>
 
-        <section className="mb-12">
+        <section className="mb-2">
           <h2 className="text-3xl font-bold text-blue-800 mb-4">Course Offerings</h2>
           <p className="text-lg text-gray-700 mb-4">
             Our program offers a comprehensive curriculum designed to equip students with the skills and knowledge needed for success in global management roles. Below are some of the key courses:
@@ -69,39 +69,24 @@ const Dtted = () => {
               <Link to="/dtled">
                 <h3 className="text-2xl font-bold text-center hover:underline text-blue-800 mb-2">Bachelor of Technology and Livelihood Education (BTLED)</h3>
               </Link>
-              <p className="text-gray-700 text-xl">
-                The Bachelor of Technology and Livelihood Education (BTLED) program is designed to equip future teachers who will be teaching the Technology and Livelihood Education subjects for Grades 4 to 8 in the basic education. Specifically, the BTLEd program is expected to produce teachers who can assume the following major roles:
-              </p>
-              <ul className="list-disc pl-6 text-gray-700 text-xl">
-                <li>Effective synthesizers of organized knowledge to allow analytical and critical thinking skills.</li>
-                <li>Efficient and effective promoters and facilitators of learning to enable the learners to develop to the fullest their potential for a continuing pursuit of lifelong learning in technology and livelihood education.</li>
-                <li>Committed humanists whose clear understanding and appreciation of human ideals and values inspire learners to realize their potential.</li>
-                <li>Model teachers with competence to teach the TLE exploratory courses from Grades 4-8.</li>
-                <li>With high regard for learning imbued with proper work attitude and values as practiced in industry.</li>
-                <li>Nationally-certified trainers in their fields of specialization.</li>
-              </ul>
             </li>
             
             <li className="p-6 bg-yellow-100 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 mb-20 transform hover:scale-105 hover:translate-y-2">
               <Link to="/dtvted">
                 <h3 className="text-2xl font-bold hover:underline text-center text-blue-800 mb-2">Bachelor in Technical-Vocational Teacher Education (BTVTEd)</h3>
               </Link>
-              <p className="text-gray-700 text-xl">
-                The Bachelor in Technical-Vocational Teacher Education (BTVTEd) is a four-year program designed to prepare future teachers in Technical and Vocational Education and Training (TVET) for roles in TLE, Senior High School, and TVET institutions. It equips students with the knowledge, skills, attitudes, and values necessary for effective teaching. BTVTEd graduates meet TESDA’s Trainer’s Methodology requirement and are exempt from the TM assessment after passing the licensure exam. The program also aims to develop teachers who can contribute to community development with competence and human values.
-              </p>
             </li>
           </ul>
 
         </section>
 
-        <section>
+        {/* <section>
           <h2 className="text-3xl text-center font-bold text-blue-800 mb-4">Meet Our Faculty</h2>
           <p className="text-lg text-gray-700 mb-4">
             Our VGMO faculty members are highly experienced professionals with a deep understanding of global management. Meet some of our esteemed professors:
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
-            {/* CSTE Dean */}
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col items-center" onClick={() => openModal('csteDean')}>
               <img
                 src="/Dean-Pimentel.png"
@@ -112,7 +97,6 @@ const Dtted = () => {
               <p className="text-gray-700 text-center text-lg mb-2">CSTE DEAN</p>
             </div>
 
-            {/* DTTED Chairman */}
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex flex-col items-center" onClick={() => openModal('dttedChairman')}>
               <img
                 src="/chair.jpg"
@@ -123,7 +107,6 @@ const Dtted = () => {
               <p className="text-gray-700 text-center text-lg mb-2">DTTED Chairman</p>
             </div>
 
-            {/* Faculty Members */}
             <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-110 cursor-pointer flex flex-col items-center" onClick={() => openModal('facultyMembers')}>
               <img
                 src="/FACULTY.JPG"
@@ -134,7 +117,6 @@ const Dtted = () => {
             </div>
           </div>
 
-        {/* Modal Popup */}
         {isOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50">
             <div ref={modalRef} className="bg-white p-8 rounded-2xl shadow-2xl relative max-w-2xl w-full max-h-[90vh] overflow-y-auto mt-5 mb-5">
@@ -196,7 +178,7 @@ const Dtted = () => {
             </div>
           </div>
         )}
-        </section>
+        </section> */}
       </div>
     </div>
   );

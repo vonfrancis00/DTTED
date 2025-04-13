@@ -70,6 +70,15 @@ const TeacherEducation = () => {
         <div>
         
         <section className="container mx-auto py-10">
+        <div className="bg-gradient-to-br from-white to-gray-50 shadow-2xl border border-gray-200 rounded-3xl p-12 max-w-4xl mx-auto mt-16 font-serif transition duration-500 ease-in-out transform hover:scale-105">
+            <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-6 tracking-wide leading-tight">
+                About the BTVTEd Program
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed">
+                The Bachelor in Technical-Vocational Teacher Education (BTVTEd) is a four-year program designed to prepare future teachers in Technical and Vocational Education and Training (TVET) for roles in TLE, Senior High School, and TVET institutions. It equips students with the knowledge, skills, attitudes, and values necessary for effective teaching. BTVTEd graduates meet TESDA’s Trainer’s Methodology requirement and are exempt from the TM assessment after passing the licensure exam. The program also aims to develop teachers who can contribute to community development with competence and human values.
+            </p>
+        </div>
+
             <h2 className="text-3xl font-extrabold text-center text-gray-800 mb-6 mt-20">
                 BACHELOR OF TECHNICAL-VOCATIONAL TEACHER EDUCATION MAJOR IN FOOD SERVICE MANAGEMENT (BTVTEd- Food Service Management)
             </h2>
