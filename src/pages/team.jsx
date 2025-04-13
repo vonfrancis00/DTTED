@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Team = () => {
   const individualMembers = [
     { name: "Grace Pimentel, PhD", image: "/Dean-Pimentel.png", role: "CSTE Dean" },
-    { name: "Aljun Sumud-ong, PhD", image: "/chair.jpg", role: "DTTED Chairman" },
+    { name: "Aljun Sumud-ong, PhD", image: "/chair.JPG", role: "DTTED Chairman" },
   ];
 
   const facultyGroup = {
