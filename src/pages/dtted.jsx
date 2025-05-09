@@ -20,7 +20,7 @@ const Dtted = () => {
     },
     {
       img: "/DTE.png",
-      title: "Doctor of Technical Education",
+      title: "Doctor of Technical Education (DTE)",
       link: "/dte"
     }
   ];
