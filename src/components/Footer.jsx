@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
 
           <div className="flex space-x-4 mt-4 justify-center md:justify-start text-left">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://web.facebook.com/profile.php?id=100072248011408" target="_blank" rel="noopener noreferrer">
               <FaFacebookF className="text-white hover:text-blue-500 transition-colors" size={20} />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
