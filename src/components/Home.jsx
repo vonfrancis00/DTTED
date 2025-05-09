@@ -31,7 +31,7 @@ const Home = () => {
     Department of Technical and Technology Education
   </h2>
 
-  <div className="bg-white bg-opacity-80 p-5 rounded-xl shadow-md max-w-xl w-full mt-4">
+  <div className="bg-white bg-opacity-60 p-5 rounded-xl shadow-md max-w-xl w-full mt-4">
     <h3 className="text-xl font-semibold text-gray-800 mb-1">
       Department Events Coming Up!
     </h3>

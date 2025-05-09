@@ -54,7 +54,7 @@ const Dtted = () => {
       {/* Objectives */}
       <div className="bg-white max-w-6xl mx-auto p-10 rounded-2xl shadow-md mt-16 transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
         <section>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-blue-800 text-center mb-8">Program Objectives</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-blue-800 text-center mb-2">Program Objectives</h2>
           <ul className="list-disc pl-6 text-lg text-gray-700 space-y-4 leading-relaxed max-w-4xl mx-auto">
             <li>To prepare students for leadership roles in multinational organizations.</li>
             <li>To enhance students’ cultural awareness and adaptability in diverse business environments.</li>
