@@ -13,6 +13,7 @@ import DTVTED from "./pages/btvted";
 import DTLED from "./pages/btled";
 import News from "./pages/news";
 import DTE from "./pages/dte"
+import MTTE from "./pages/mtte"
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/dtvted" element={<DTVTED />} />
           <Route path="/dtled" element={<DTLED />} />
           <Route path="/dte" element={<DTE />} />
+          <Route path="/mtte" element={<MTTE />} />
 
         </Routes>
       </main>

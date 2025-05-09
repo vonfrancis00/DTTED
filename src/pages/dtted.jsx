@@ -16,7 +16,7 @@ const Dtted = () => {
     {
       img: "/mastersIMG.png",
       title: "Master in Technical and Technology Education (MTTE)",
-      link: "/masters"
+      link: "/mtte"
     },
     {
       img: "/DTE.png",

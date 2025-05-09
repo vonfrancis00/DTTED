@@ -36,8 +36,8 @@ const Doctors = () => {
                     <h2 className="text-4xl font-bold text-center text-gray-800 mb-8 leading-tight">
                         About the DTE Program
                     </h2>
-                    <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                        The <span className="font-semibold text-gray-900">Doctor of Technology Education (DTE)</span> program is designed to provide advanced training and research, producing specialized technical and technology leaders and consultants in education, TVET, and industries. It aims to cultivate innovation and leadership in technology education.
+                    <p className="text-gray-700 text-lg font-semibold leading-relaxed mb-6">
+                        The <span className="font-bold text-gray-900">Doctor of Technology Education (DTE)</span> program is designed to provide advanced training and research, producing specialized technical and technology leaders and consultants in education, TVET, and industries. It aims to cultivate innovation and leadership in technology education.
                     </p>
                 </div>
             </section>
