@@ -12,6 +12,7 @@ import Team from "./pages/team";
 import DTVTED from "./pages/btvted";
 import DTLED from "./pages/btled";
 import News from "./pages/news";
+import DTE from "./pages/dte"
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/Team/ourteam" element={<Team />} />
           <Route path="/dtvted" element={<DTVTED />} />
           <Route path="/dtled" element={<DTLED />} />
+          <Route path="/dte" element={<DTE />} />
 
         </Routes>
       </main>

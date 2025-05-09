@@ -270,55 +270,45 @@ const TeacherEducation = () => {
                 </div>
             )}
         </section>
-        <section className="container mx-auto py-20 bg-white mt-2 rounded-xl shadow-2xl">
-    <h2 className="text-5xl font-extrabold text-center text-gray-900 mb-8">
-        Program Outcomes
-    </h2>
-    <p className="text-xl font-semibold text-gray-800 text-center mb-10 px-4">
-        Upon completing the program, graduates will be able to:
+        <section className="container mx-auto py-20 px-6 bg-gradient-to-br from-white to-blue-50 mt-8 rounded-xl shadow-2xl">
+  <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 mb-8">
+    Program Outcomes
+  </h2>
+
+  <p className="text-lg md:text-xl font-medium text-gray-800 text-center mb-12 max-w-3xl mx-auto">
+    Upon completing the program, graduates will be able to:
+  </p>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+    {[
+      "Demonstrate competence and mastery in teaching the subject or area of specialization as required by the Philippine TVET Trainers-Assessors Qualification Framework (PTTQF).",
+      "Practice professional and ethical teaching standards sensitive to local, national, and global realities, as prescribed by UNESCO.",
+      "Pursue lifelong learning for personal and professional growth through experiential and field-based opportunities.",
+      "Develop research and innovations that can contribute to the improvement of the community and the well-being of individuals.",
+      "Demonstrate professionalism and excellence in leadership and technical contributions while promoting unity and stewardship.",
+      "Exhibit research capacity and teaching competencies in their chosen specialization.",
+      "Conduct research to improve the teaching-learning process and develop innovations for educational, commercial, and other purposes.",
+      "Demonstrate broad and coherent knowledge and skills in their field of study for professional work and lifelong learning.",
+      "Preserve and promote Filipino historical and cultural heritage as reflected in contextualized instruction, research, and innovations.",
+      "Apply specialized knowledge and skills with minimal supervision in any specific field within technical-vocational teacher education.",
+    ].map((item, index) => (
+      <div
+        key={index}
+        className="flex items-start gap-4 bg-white p-5 rounded-lg shadow hover:shadow-md transition-all duration-300"
+      >
+        <div className="text-blue-600 text-xl font-bold pt-1">•</div>
+        <p className="text-gray-700 text-base leading-relaxed">{item}</p>
+      </div>
+    ))}
+  </div>
+
+  <div className="mt-12 text-center max-w-3xl mx-auto">
+    <p className="text-lg md:text-xl font-semibold text-gray-700">
+      This program ensures that graduates are equipped with a robust foundation to lead, innovate, and excel in the field of technical-vocational teacher education.
     </p>
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-4xl mx-auto">
-        <ul className="list-disc pl-6 text-lg text-gray-700 space-y-6">
-            <li>
-                <strong className="font-semibold text-gray-800">Demonstrate competence and mastery</strong> in teaching the subject or area of specialization as required by the Philippine TVET Trainers-Assessors Qualification Framework (PTTQF).
-            </li>
-            <li>
-                <strong className="font-semibold text-gray-800">Practice professional and ethical teaching standards</strong> sensitive to local, national, and global realities, as prescribed by UNESCO.
-            </li>
-            <li>
-                <strong className="font-semibold text-gray-800">Pursue lifelong learning</strong> for personal and professional growth through experiential and field-based opportunities.
-            </li>
-            <li>
-                <strong className="font-semibold text-gray-800">Develop research and innovations</strong> that can contribute to the improvement of the community and the well-being of individuals.
-            </li>
-            <li>
-                <strong className="font-semibold text-gray-800">Demonstrate professionalism and excellence</strong> in leadership and technical contributions while promoting unity and stewardship.
-            </li>
-        </ul>
-        <ul className="list-disc pl-6 text-lg text-gray-700 space-y-6">
-            <li>
-                <strong className="font-semibold text-gray-800">Exhibit research capacity and teaching competencies</strong> in their chosen specialization.
-            </li>
-            <li>
-                <strong className="font-semibold text-gray-800">Conduct research</strong> to improve the teaching-learning process and develop innovations for educational, commercial, and other purposes.
-            </li>
-            <li>
-                <strong className="font-semibold text-gray-800">Demonstrate broad and coherent knowledge</strong> and skills in their field of study for professional work and lifelong learning.
-            </li>
-            <li>
-                <strong className="font-semibold text-gray-800">Preserve and promote Filipino historical and cultural heritage</strong> as reflected in contextualized instruction, research, and innovations.
-            </li>
-            <li>
-                <strong className="font-semibold text-gray-800">Apply specialized knowledge and skills</strong> with minimal supervision in any specific field within technical-vocational teacher education.
-            </li>
-        </ul>
-    </div>
-    <div className="mt-8 text-center px-4">
-        <p className="text-lg font-semibold text-gray-800">
-            This program ensures that graduates are fully equipped to meet the growing demands of the workforce and contribute meaningfully to their communities and fields.
-        </p>
-    </div>
+  </div>
 </section>
+
 
         </div>
     );

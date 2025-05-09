@@ -10,26 +10,31 @@ const Announcements = () => {
       title: "Application for Graduation for 2nd Semester", 
       description: "Ensure you submit all required documents and meet the deadlines.",
       image: "/activities(1).jpg",
+      link: "https://www.facebook.com/photo/?fbid=1081700317308455&set=pcb.1081702817308205",  // Add the link here
     },
     { 
       title: "Schedule for Application", 
       description: "Application period starts from March 4th to March 28th. Don't miss it!",
       image: "/activities(2).jpg",
+      link: "https://www.facebook.com/photo/?fbid=1081701713974982&set=pcb.1081702817308205",  // Add the link here
     },
     { 
       title: "Attention MTTE and DTE Students!", 
-      description: `Mark your calendars! The Comprehensive Exam schedule has been released. DEADLINE FOR APPLICATION: February 28, 2025. Please present your Complete Academic Requirement (CAR) Certificate upon application. MTTE: Choose two core courses and two major courses. DTE: Choose two core courses and four major courses. For more information, contact Sir Jomar P. Flores and Dr. Aljon Y. Sumod-ong.`,
+      description: `Mark your calendars! The Comprehensive Exam schedule has been released. DEADLINE FOR APPLICATION: February 28, 2025.`,
       image: "/announcement(1).png",
+      link: "https://www.facebook.com/photo?fbid=692670143151247&set=a.160352309716369",  // Add the link here
     },
     { 
       title: "New Chapter for the Department", 
       description: `A new chapter begins for the Department of Technical and Technology Education as we proudly welcome our new Department Head, Dr. Aljon Y. Sumod-ong.`,
       image: "/announcement(2).png",
+      link: "https://www.facebook.com/photo/?fbid=654778803607048&set=a.160352309716369",  // Add the link here
     },
     {
       title: "Honoring the Outgoing Chairman of Department of Technical and Technology Education",
-      description: "As we bid farewell to Prof. Nivea Louwah D. Sermona, we celebrate their years of leadership, dedication, and invaluable contributions to the Department of Technical and Technology Education. Their vision and commitment have left a lasting impact, shaping the department’s success and inspiring colleagues and students alike. Join us in expressing our heartfelt appreciation and best wishes for their future endeavors!",
-      image:"/announcement(3).jpg"
+      description: "As we bid farewell to Prof. Nivea Louwah D. Sermona...",
+      image: "/announcement(3).jpg",
+      link: "https://www.facebook.com/photo/?fbid=654140560337539&set=a.160352309716369",  // Add the link here
     }
   ];
 
@@ -82,6 +87,7 @@ const Announcements = () => {
           title={selectedAnnouncement.title}
           description={selectedAnnouncement.description}
           image={selectedAnnouncement.image}
+          link={selectedAnnouncement.link}  // Pass the link here
         />
       )}
     </div>

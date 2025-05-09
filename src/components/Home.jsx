@@ -5,51 +5,59 @@ import { GrAnnounce } from "react-icons/gr";
 
 const Home = () => {
   return (
-    <section>
-      <div
-        className="w-full h-screen bg-cover bg-center"
-        style={{
-          backgroundImage: `url("/bg-landing.jpg")`,
-          backgroundRepeat: "no-repeat",
-        }}
+    <section className="relative w-full h-screen overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
-        <div className="h-full flex flex-col justify-start items-start text-left bg-black bg-opacity-50 p-8 mt-12">
-          <img
-            src="/logo-dept.png"
-            alt="Department Logo"
-            className="h-56 w-56 md:h-64 md:w-64 mb-6 mt-5" 
-          />
+        <source src="/bgvideo.mov" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-          <h2 className="text-4xl font-extrabold text-white mb-4">
-            Department of Technical and Technology Education</h2>
+      {/* Overlay and Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center bg-black bg-opacity-50 px-4 py-8">
+  {/* Optional Logo */}
+  <img
+    src="/logo-dept.png"
+    alt="Department Logo"
+    className="h-40 w-40 md:h-48 md:w-48 mb-5"
+  />
 
-            <div className="bg-white bg-opacity-70 p-6 rounded-xl shadow-lg max-w-4xl mx-auto mt-16">
-            <h3 className="text-2xl font-bold text-center text-gray-800 mb-2">
-              Department Events Coming Up!
-            </h3>
-            <p className="text-gray-700">
-              Stay tuned for Updates!
-            </p>
-          </div>
+  <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 drop-shadow">
+    Department of Technical and Technology Education
+  </h2>
 
-          <div className="flex justify-center w-full gap-4 mt-5">
-            <Link
-              to="/activities"
-              className="bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 flex items-center gap-2"
-            >
-              <MdCalendarMonth size={20} />
-              Activities & Events
-            </Link>
-            <Link
-              to="/announcements"
-              className="bg-blue-600 text-white p-3 rounded-md hover:bg-blue-700 flex items-center gap-2"
-            >
-              <GrAnnounce size={20} />
-              Announcements
-            </Link>
-          </div>
-        </div>
-      </div>
+  <div className="bg-white bg-opacity-80 p-5 rounded-xl shadow-md max-w-xl w-full mt-4">
+    <h3 className="text-xl font-semibold text-gray-800 mb-1">
+      Department Events Coming Up!
+    </h3>
+    <p className="text-gray-700 text-sm">
+      Stay tuned for the latest updates and announcements.
+    </p>
+  </div>
+
+  <div className="flex flex-wrap justify-center gap-3 mt-6">
+    <Link
+      to="/activities"
+      className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition text-sm flex items-center gap-2"
+    >
+      <MdCalendarMonth size={16} />
+      Activities & Events
+    </Link>
+    <Link
+      to="/announcements"
+      className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition text-sm flex items-center gap-2"
+    >
+      <GrAnnounce size={16} />
+      Announcements
+    </Link>
+  </div>
+</div>
+
     </section>
   );
 };

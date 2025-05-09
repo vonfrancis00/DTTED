@@ -1,62 +1,62 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from "react";
 
-const ModalAnnounce = ({ isOpen, onClose, title, description, image }) => {
-  const modalRef = useRef(null);
-
-  // Close the modal when clicking outside of it
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (modalRef.current && !modalRef.current.contains(event.target)) {
-        onClose();
-      }
-    };
-
-    if (isOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside);
+const ModalAnnounce = ({ isOpen, onClose, title, description, image, link }) => {
+  // Close modal when clicking outside of it
+  const handleBackdropClick = (e) => {
+    if (e.target === e.currentTarget) {
+      onClose();
     }
+  };
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden"; // Prevent body scrolling when modal is open
+    } else {
+      document.body.style.overflow = "unset"; // Re-enable body scrolling when modal is closed
+    }
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.body.style.overflow = "unset"; // Clean up when component is unmounted
     };
-  }, [isOpen, onClose]);
+  }, [isOpen]);
 
-  if (!isOpen) return null;
-
-  return (
-    <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex justify-center items-center z-50">
+  return isOpen ? (
+    <div
+      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+      onClick={handleBackdropClick}
+    >
       <div
-        ref={modalRef}
-        className="bg-white w-11/12 md:w-2/3 lg:w-1/2 xl:w-1/3 p-8 rounded-lg shadow-lg overflow-hidden"
+        className="relative p-6 bg-white rounded-xl shadow-2xl overflow-hidden w-full max-w-3xl"
+        onClick={(e) => e.stopPropagation()} // Prevent click event from propagating to the backdrop
       >
-        {image && (
-          <div className="overflow-auto max-h-80 mb-6">
-            <img 
-              src={image} 
-              alt={title}
-              className="w-full h-auto object-contain rounded-lg"
-            />
-          </div>
-        )}
-
-        <h4 className="text-3xl font-semibold text-gray-800 mb-6">{title}</h4>
-
-        <div className="overflow-y-auto max-h-72 mb-6">
-          <p className="text-gray-700 text-lg leading-relaxed">{description}</p>
+        <button
+          className="absolute top-4 right-4 text-white text-3xl font-bold bg-gray-800 rounded-full p-2 hover:bg-red-500 transition"
+          onClick={onClose}
+        >
+          ✕
+        </button>
+        <div className="flex justify-center mb-6">
+          <img
+            src={image}
+            alt={title}
+            className="w-full max-w-[700px] max-h-[400px] object-cover rounded-lg shadow-xl"
+          />
         </div>
+        <h2 className="text-3xl font-bold text-center text-blue-900 mb-4">{title}</h2>
+        <p className="text-lg text-gray-700 mb-4">{description}</p>
 
-        <div className="flex justify-end">
-          <button 
-            className="bg-blue-600 text-white py-2 px-6 rounded-md shadow-md hover:bg-blue-700 transition duration-300"
-            onClick={onClose}
+        {link && (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700"
           >
-            Close
-          </button>
-        </div>
+            Read More
+          </a>
+        )}
       </div>
     </div>
-  );
+  ) : null;
 };
 
 export default ModalAnnounce;
