@@ -52,7 +52,7 @@ const Footer = () => {
                   <a href="/News/facultynews" className="hover:underline">Faculty & Staff News</a>
                 </li>
                 <li>
-                  <a href="/Team/ourteam" className="hover:underline">Our Team</a>
+                  <a href="/Team/ourteam" className="hover:underline">Our Staff</a>
                 </li>
                 <li>
                   <a href="/aboutus/contactinfo" className="hover:underline">Contact Information</a>
