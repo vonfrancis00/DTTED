@@ -56,16 +56,30 @@ const Header = () => {
       className="bg-yellow-400 text-blue-800 px-8 py-2 flex flex-row items-center fixed top-0 left-0 w-full z-50"
     >
       <div className="container mx-auto flex justify-between items-center w-full">
-        <div className="bg-white rounded-md min-h-[60px] min-w-[60px] max-h-[60px] max-w-[60px] p-1">
-          <Link to="/" onClick={handleLinkClick}>
-            <img src="/logo-dept.png"
-            alt="Department Logo" className="w-full h-full object-contain"/>
-          </Link>
-        </div>
-        <button onClick={toggleSidebar} className="md:hidden">
-          {isSidebarOpen ? <FaTimes /> : <FaBars />}
-        </button>
-      </div>
+  {/* Logo and Heading Section */}
+  <div className="flex items-center space-x-4">
+    <Link
+      to="/"
+      onClick={handleLinkClick}
+      className="bg-white rounded-md min-h-[60px] min-w-[60px] max-h-[60px] max-w-[60px] p-1 flex-shrink-0"
+    >
+      <img
+        src="/logo-dept.png"
+        alt="Department Logo"
+        className="w-full h-full object-contain"
+      />
+    </Link>
+    <h2 className="text-md font-bold text-blue-800 drop-shadow">
+      DTTED
+    </h2>
+  </div>
+
+  {/* Mobile Toggle Button */}
+  <button onClick={toggleSidebar} className="md:hidden">
+    {isSidebarOpen ? <FaTimes /> : <FaBars />}
+  </button>
+</div>
+
 
       <nav
         className={`${

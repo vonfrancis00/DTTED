@@ -91,42 +91,46 @@ const UniversityInformation = () => {
               <h2 className="text-4xl font-extrabold text-center text-blue-800 mb-4">USTP UPDATES</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
+                  <a href="https://www.ustp.edu.ph/ustp-cdo-alumni-secure-jobs-in-japans-automotive-industry/" target="_blank" rel="noopener noreferrer">
                   <img
                     src="/latest(0).png"
                     alt="ustp update"
                     className="w-72 h-72 mx-auto mb-4"
                   />
-                  <a href="https://www.ustp.edu.ph/ustp-cdo-alumni-secure-jobs-in-japans-automotive-industry/" target="_blank" rel="noopener noreferrer">
+                  
                     <h3 className="text-2xl font-semibold text-blue-800 text-center mb-2 hover:underline">USTP CDO alumni secure jobs in Japan’s Automotive Industry</h3>
                   </a>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
+                  <a href="https://www.ustp.edu.ph/ustp-arcu-showcases-northern-mindanao-indigenous-cultural-attires/" target="_blank" rel="noopener noreferrer">
                   <img
                     src="/latest(1).png"
                     alt="ustp update"
                     className="w-72 h-72 mx-auto mb-4"
                   />
-                  <a href="https://www.ustp.edu.ph/ustp-arcu-showcases-northern-mindanao-indigenous-cultural-attires/" target="_blank" rel="noopener noreferrer">
+                  
                     <h3 className="text-2xl font-semibold text-center text-blue-800 mb-2 hover:underline">USTP ARCU showcases Northern Mindanao Indigenous Cultural Attires</h3>
                   </a>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
+                  <a href="https://www.ustp.edu.ph/former-congen-of-japan-in-davao-meets-ustp-officials-to-discuss-industry-and-academic-collaboration/" target="_blank" rel="noopener noreferrer">
                   <img
                     src="/latest(2).png"
                     alt="ustp update"
                     className="w-72 h-72 mx-auto mb-4"
                   />
-                  <a href="https://www.ustp.edu.ph/former-congen-of-japan-in-davao-meets-ustp-officials-to-discuss-industry-and-academic-collaboration/" target="_blank" rel="noopener noreferrer">
+                  
                     <h3 className="text-2xl font-semibold text-center text-blue-800 mb-2 hover:underline">Former ConGen of Japan in Davao meets USTP officials to discuss industry and academic collaboration</h3>
                   </a>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
+                  <a href="https://www.ustp.edu.ph/february-2025-results-licensure-examination-for-mechanical-engineers/" target="_blank" rel="noopener noreferrer">
                   <img
                     src="/latest(3).png"
                     alt="ustp update"
                     className="w-72 h-72 mx-auto mb-4"
                   />
-                  <a href="https://www.ustp.edu.ph/february-2025-results-licensure-examination-for-mechanical-engineers/" target="_blank" rel="noopener noreferrer">
+                  
                     <h3 className="text-2xl font-semibold text-center text-blue-800 mb-2 hover:underline">February 2025 Results: Licensure Examination for Mechanical Engineers</h3>
                   </a>
                 </div>
