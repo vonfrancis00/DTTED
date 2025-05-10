@@ -64,7 +64,7 @@ const Team = () => {
             >
               &times;
             </button>
-            <h2 className="text-3xl font-bold text-blue-900 mb-4">Faculty Members</h2>
+            <h2 className="text-3xl text-center font-bold text-blue-900 mb-4">Faculty Members</h2>
             <img
               src={facultyGroup.image}
               alt={facultyGroup.name}
