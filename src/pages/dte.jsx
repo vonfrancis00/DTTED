@@ -51,7 +51,7 @@ const Doctors = () => {
                     <img
                         src="/DTE(PIC).png"
                         alt="Doctor of Technology Education program showcasing course content and features"
-                        className="w-80 h-80 object-cover rounded-lg shadow-xl mx-auto transition-transform duration-300 transform hover:scale-105"
+                        className="w-80 h-80 object-cover rounded-lg shadow-xl mx-auto transition-transform duration-300 transform hover:scale-125"
                         onClick={() => handleImageClick("/DTE(PIC).png")}
                     />
                 </div>

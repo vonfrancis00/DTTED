@@ -6,6 +6,7 @@ import {
   FaInfoCircle,
   FaClipboardList,
   FaBullhorn,
+  FaHome
 } from "react-icons/fa";
 
 const Header = () => {
@@ -73,6 +74,15 @@ const Header = () => {
       >
         <ul className="flex flex-col md:w-full md:justify-end md:gap-6 md:flex-row space-y-4 md:space-y-0 relative">
           {/* About Dropdown */}
+          <li>
+            <Link
+              to="/"
+              onClick={handleLinkClick}
+              className="hover:underline font-semibold flex items-center gap-2"
+            >
+              <FaHome /> Home
+            </Link>
+          </li>
           <li
             className="relative"
             onMouseEnter={handleMouseEnter}
@@ -154,6 +164,7 @@ const Header = () => {
               <FaBullhorn /> Announcements
             </Link>
           </li>
+          
         </ul>
       </nav>
     </header>

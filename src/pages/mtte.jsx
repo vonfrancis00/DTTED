@@ -56,7 +56,6 @@ const Masters = () => {
             <section className="bg-white py-20">
                 <div className="text-center mb-12 px-6">
                     <h2 className="text-4xl font-extrabold text-gray-800 mb-4">MTTE Program Prospectus</h2>
-                    <p className="text-lg text-gray-600">Click on any image to view in full size</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-6 max-w-6xl mx-auto">
                     {prospectusImages.map((img, i) => (
@@ -65,7 +64,7 @@ const Masters = () => {
                             className="flex flex-col items-center cursor-pointer"
                             onClick={() => handleImageClick(img.src)}
                         >
-                            <div className="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 w-full">
+                            <div className="overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-125 w-full">
                                 <img
                                     src={img.src}
                                     alt={img.title}
